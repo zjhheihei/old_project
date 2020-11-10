@@ -117,17 +117,17 @@
 ******************************************************************************/
 #if defined(__TUYA7X3__)
 #define PRODUCT_KEY "ksfc4esebwymmnqt"                  //开发平台创建产品后生成的16位字符产品唯一标识
-#define MCU_VER "1.0.4"                                 //用户的软件版本,用于MCU固件升级,MCU升级版本需修改
+#define MCU_VER "1.0.5"                                 //用户的软件版本,用于MCU固件升级,MCU升级版本需修改
 #elif defined(__TUYA716__)
 #define PRODUCT_KEY "xwebegd8dnpew8al"                  
-#define MCU_VER "1.1.1"                                 
+#define MCU_VER "1.1.2"                                 
 #elif defined(__TUYA716_5G__)
 #define PRODUCT_KEY "tl6q9cni57lnh2yo" 
-#define MCU_VER "1.0.4"     
+#define MCU_VER "1.0.5"     
 #elif defined(__TUYA7X3_5G__)
 //#define PRODUCT_KEY "bzoqcsqoraxftsvn"        
 #define PRODUCT_KEY "ckiqkk1e2hjilpn5" 
-#define MCU_VER "1.0.4" 
+#define MCU_VER "1.0.5" 
 #endif  
 
 

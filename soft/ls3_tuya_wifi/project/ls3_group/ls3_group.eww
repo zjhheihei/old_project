@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\..\ls3_716_tuya\ls3_716_tuya.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\ls3_716_tuya_5g\ls3_716_tuya_5g.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\ls3_7x3_tuya\ls3_723_tuya.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\ls3_7X3_tuya_5g\ls3_7x3_tuya_5g.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>ls3_group_release</name>
+      <member>
+        <project>ls3_716_tuya</project>
+        <configuration>Release</configuration>
+      </member>
+      <member>
+        <project>ls3_716_tuya_5g</project>
+        <configuration>Release</configuration>
+      </member>
+      <member>
+        <project>ls3_723_tuya</project>
+        <configuration>Release</configuration>
+      </member>
+      <member>
+        <project>ls3_7x3_tuya_5g</project>
+        <configuration>Release</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

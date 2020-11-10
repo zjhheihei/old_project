@@ -94,8 +94,13 @@ SysPara_t s_sysPara =
     .record.interval[INT6].temp = FAC_INTERVAL6_TEMP,
     .record.interval[INT7].hourMinute = FAC_INTERVAL7_HOUR_MINUTE,
     .record.interval[INT7].temp = FAC_INTERVAL7_TEMP,   
+    #if defined(__TUYA716__) || defined(__TUYA716_5G__)
     .record.aiAdjSetPara.t_max  = 30,
-    .record.aiAdjSetPara.r_max  = 20,
+    .record.aiAdjSetPara.r_max  = 25,   
+    #else
+    .record.aiAdjSetPara.t_max  = 15,
+    .record.aiAdjSetPara.r_max  = 15,   
+    #endif
 };
 
 
@@ -276,7 +281,7 @@ void measTempCorrect(int16_t *_out_Temp)
 
 
 
-#if defined(__TUYA716__) || defined(__TUYA716_5G__)
+//#if defined(__TUYA716__) || defined(__TUYA716_5G__)
 typedef struct
 { 
     uint8_t                  t_cyc;
@@ -348,7 +353,7 @@ void app_control_measTempAdj(void)
         aiAdjRunPara.r_runTemp = s_sysPara.record.aiAdjSetPara.r_max;
     }
 }
-#endif
+//#endif
 
 
 
@@ -424,13 +429,13 @@ void app_control_updata_measTemp(void)
     {
         s_sysPara.runMeasTemp = -95;
     }
-    #if defined(__TUYA716__) || defined(__TUYA716_5G__)
+    //#if defined(__TUYA716__) || defined(__TUYA716_5G__)
     app_control_measTempAdj();
     if(SENSOR_OUT != s_sysPara.record.sersonType)
     {//单外置不减温度
         s_sysPara.runMeasTemp -= get_aiAdjRunTemp();
     }   
-    #endif
+    //#endif
     measTempCorrect(&s_sysPara.runMeasTemp);
 }
 
