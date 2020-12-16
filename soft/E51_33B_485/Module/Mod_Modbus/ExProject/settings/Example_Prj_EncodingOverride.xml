@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<userOverrides>
+  <override>
+    <path>D:\2018\2018_soft\Mrd2018PN027_E51.33BRS485\McuSoftwares\E51_33B_485\Module\Mod_Modbus\Src\Mod_ModbusSlave.c</path>
+    <encoding>GB2312</encoding>
+  </override>
+  <override>
+    <path>E:\WORKING\MENREDPROJECT\2018\MRD2018PN027_E51NEWAIRRS485\MCUSOFTWARES\E51_33B_485\MODULE\MOD_MODBUS\DEPEND\BSP_SlaveUart.h</path>
+    <encoding>UTF-8</encoding>
+  </override>
+  <override>
+    <path>E:\WORKING\MENREDPROJECT\2018\MRD2018PN027_E51NEWAIRRS485\MCUSOFTWARES\E51_33B_485\MODULE\MOD_MODBUS\EXPROJECT\ExMain.c</path>
+    <encoding>UTF-8</encoding>
+  </override>
+  <override>
+    <path>E:\WORKING\MENREDPROJECT\2018\MRD2018PN027_E51NEWAIRRS485\MCUSOFTWARES\E51_33B_485\MODULE\MOD_SYSTEMTICK\DEPEND\BSP_Systick.c</path>
+    <encoding>UTF-8</encoding>
+  </override>
+  <override>
+    <path>E:\WORKING\MENREDPROJECT\2018\MRD2018PN027_E51NEWAIRRS485\MCUSOFTWARES\E51_33B_485\MODULE\MOD_SYSTEMTICK\DEPEND\BSP_Systick.h</path>
+    <encoding>UTF-8</encoding>
+  </override>
+  <override>
+    <path>E:\WORKING\MENREDPROJECT\2018\MRD2018PN027_E51NEWAIRRS485\MCUSOFTWARES\E51_33B_485\MODULE\MOD_SYSTEMTICK\DEPEND\iostm8l052r8.h</path>
+    <encoding>UTF-8</encoding>
+  </override>
+</userOverrides>
+
+

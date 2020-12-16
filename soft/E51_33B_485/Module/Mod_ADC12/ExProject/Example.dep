@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1308764054</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$TOOLKIT_DIR$\config\lnkstm8l052r8.icf</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_Adc_NTC.o</file>
+      <file>$PROJ_DIR$\..\Depend\BSP_Adc_NTC.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_Adc_NTC.o</file>
+      <file>$PROJ_DIR$\..\Depend\DataTypedef.h</file>
+      <file>$PROJ_DIR$\..\Src\Mod_Adc_NTC.c</file>
+      <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+      <file>$PROJ_DIR$\..\Depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\..\Depend\BSP_Adc_NTC.h</file>
+      <file>$PROJ_DIR$\..\Src\Mod_Adc_NTC.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\Example.out</file>
+      <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\ExMain.o</file>
+      <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
+      <file>$PROJ_DIR$\..\..\..\Project\DeviceType_Slt.h</file>
+      <file>$PROJ_DIR$\ExMain.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_Adc_NTC.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Example.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_Adc_NTC.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\ExMain.pbi</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\Depend\BSP_Adc_NTC.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 1</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 10 7 15 14 4</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 4 7 14 10 15</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Src\Mod_Adc_NTC.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 3</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 9 8 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\Example.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 0 1 13 3 12 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ExMain.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 9 8 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 11</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

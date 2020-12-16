@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>2855563132</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\ExMain.c</file>
+      <file>$PROJ_DIR$\..\Depend\BSP_CLK.h</file>
+      <file>$PROJ_DIR$\..\Depend\BSP_CLK.c</file>
+      <file>$PROJ_DIR$\..\Src\Mod_SysClock.c</file>
+      <file>$PROJ_DIR$\..\Src\Mod_SysClock.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\config\lnkstm8l052r8.icf</file>
+      <file>$PROJ_DIR$\..\Depend\BSP_FlashEEM.c</file>
+      <file>$PROJ_DIR$\..\Src\Mod_FlashStoBlockOf8Bits.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_FlashEEM.pbi</file>
+      <file>$PROJ_DIR$\..\Depend\BSP_FlashEEM.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_FlashEEM.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\ExMain.o</file>
+      <file>$PROJ_DIR$\Debug\Exe\Example.out</file>
+      <file>$PROJ_DIR$\..\Depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_FlashStoBlockOf8Bits.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\ExMain.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlstm8mmn.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_FlashStoBlockOf8Bits.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Example.pbd</file>
+      <file>$TOOLKIT_DIR$\lib\dbgstm8mmd.a</file>
+      <file>$PROJ_DIR$\..\Src\Mod_FlashStoBlockOf8Bits.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_SysClock.pbi</file>
+      <file>$PROJ_DIR$\..\Depend\DataTypedef.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_SysClock.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_CLK.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_CLK.pbi</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\ExMain.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 12</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 1 24</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 4 1 24</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Depend\BSP_CLK.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14 17 24 5</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 24 14 17 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Src\Mod_SysClock.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 1 24</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 4 1 24</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Depend\BSP_FlashEEM.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 11</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 10 24 14 17 22 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Src\Mod_FlashStoBlockOf8Bits.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 15</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 22 10 24</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\Example.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 6 26 12 25 18 21</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 13</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

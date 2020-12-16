@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>4163910013</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
+      <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+      <file>$PROJ_DIR$\..\Src\Mod_SystemTick.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_CLK.o</file>
+      <file>$PROJ_DIR$\..\Depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_SlaveUart.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_SystemTick.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_ModbusSlave.o</file>
+      <file>$PROJ_DIR$\..\..\Mod_Systemtick\Depend\BSP_Systick.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_SystemTick.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_Systick.pbi</file>
+      <file>$PROJ_DIR$\..\Depend\BSP_Systick.h</file>
+      <file>$PROJ_DIR$\..\Depend\BSP_Systick.c</file>
+      <file>$PROJ_DIR$\..\..\Mod_SysClock\Depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_SysClock.pbi</file>
+      <file>$PROJ_DIR$\Debug\Exe\Example.out</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_Systick.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_SysClock.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_ModbusSlave.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_CLK.pbi</file>
+      <file>$TOOLKIT_DIR$\config\lnkstm8l052r8.icf</file>
+      <file>$PROJ_DIR$\..\Src\Mod_SystemTick.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_SlaveUart.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\ExMain.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Example.pbd</file>
+      <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+      <file>$PROJ_DIR$\..\..\Mod_SysClock\Depend\DataTypedef.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_Systemtick\Depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\ExMain.c</file>
+      <file>$PROJ_DIR$\..\..\Mod_Systemtick\Depend\BSP_Systick.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_Systemtick\Src\Mod_SystemTick.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_Systemtick\Src\Mod_SystemTick.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\ExMain.o</file>
+      <file>$PROJ_DIR$\..\Depend\DataTypedef.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_Systemtick\Depend\DataTypedef.h</file>
+      <file>$PROJ_DIR$\..\Depend\BSP_SlaveUart.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_SysClock\Src\Mod_SysClock.c</file>
+      <file>$PROJ_DIR$\..\Src\Mod_ModbusSlave.c</file>
+      <file>$PROJ_DIR$\..\..\Mod_SysClock\Depend\BSP_CLK.h</file>
+      <file>$PROJ_DIR$\..\Src\Mod_ModbusSlave.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_SysClock\Src\Mod_SysClock.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_SysClock\Depend\BSP_CLK.c</file>
+      <file>$PROJ_DIR$\..\Depend\BSP_SlaveUart.c</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\Src\Mod_SystemTick.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 6</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 21 11 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11 34 21</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Mod_Systemtick\Depend\BSP_Systick.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 10</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 35 28 0 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28 0 35 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Depend\BSP_Systick.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 16</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 10</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 34 4 0 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 0 34 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\Example.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 20 3 22 16 33 7 17 6 25 1</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ExMain.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 31 30 35 40 36 41 39</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31 41 30 35 40 36 39</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Mod_Systemtick\Src\Mod_SystemTick.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 6</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 31 30 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30 35 31</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 15</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Mod_SysClock\Src\Mod_SysClock.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 41 39 26</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 41 39 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Src\Mod_ModbusSlave.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 7</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 40 36 34 31 30</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 31 30 36 34 40</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Mod_SysClock\Depend\BSP_CLK.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 3</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 26 13 0 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13 0 26 27</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Depend\BSP_SlaveUart.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 22</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 5</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 34 4 0 27</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 4 0 34</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+    <forcedrebuild>
+      <name>[REBUILD_ALL]</name>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

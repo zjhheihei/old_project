@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1749829069</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\Mod_SysClock\Depend\BSP_CLK.c</file>
+      <file>$PROJ_DIR$\..\Depend\BSP_IWDG.h</file>
+      <file>$PROJ_DIR$\..\Depend\BSP_IWDG.c</file>
+      <file>$PROJ_DIR$\..\Src\Mod_IWDG.c</file>
+      <file>$PROJ_DIR$\..\Src\Mod_IWDG.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_SysClock\Depend\BSP_CLK.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_SysClock\Src\Mod_SysClock.c</file>
+      <file>$PROJ_DIR$\..\..\Mod_SysClock\Src\Mod_SysClock.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_Systemtick\Depend\BSP_Systick.c</file>
+      <file>$PROJ_DIR$\..\..\Mod_Systemtick\Depend\BSP_Systick.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_Systemtick\Src\Mod_SystemTick.c</file>
+      <file>$PROJ_DIR$\..\..\Mod_Systemtick\Src\Mod_SystemTick.h</file>
+      <file>$PROJ_DIR$\ExMain.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_IWDG.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_CLK.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_IWDG.o</file>
+      <file>$PROJ_DIR$\..\..\Mod_SysClock\Depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_Systick.pbi</file>
+      <file>$PROJ_DIR$\..\..\Mod_SysClock\Depend\DataTypedef.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_ADC12\Depend\BSP_Adc_NTC.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_ADC12\Depend\DataTypedef.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_ADC12\Src\Mod_Adc_NTC.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_CLK.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_IWDG.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_SystemTick.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_Systick.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_SysClock.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_SysClock.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_SystemTick.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\ExMain.o</file>
+      <file>$PROJ_DIR$\..\Depend\BSP_Adc_NTC.c</file>
+      <file>$PROJ_DIR$\..\..\..\Project\DeviceType_Slt.h</file>
+      <file>$TOOLKIT_DIR$\config\lnkstm8l052r8.icf</file>
+      <file>$PROJ_DIR$\..\Depend\BSP_Adc_NTC.h</file>
+      <file>$PROJ_DIR$\..\Src\Mod_Adc_NTC.c</file>
+      <file>$PROJ_DIR$\..\Src\Mod_Adc_NTC.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_Adc_NTC.o</file>
+      <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+      <file>$PROJ_DIR$\Debug\Exe\Example.out</file>
+      <file>$PROJ_DIR$\..\Depend\DataTypedef.h</file>
+      <file>$PROJ_DIR$\..\Depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_Adc_NTC.o</file>
+      <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_Adc_NTC.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_Adc_NTC.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\ExMain.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Example.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\Mod_IWDG.pbi</file>
+      <file>$PROJ_DIR$\..\..\Mod_Systemtick\Depend\DataTypedef.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_Systemtick\Depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\..\..\Mod_Backlight\Depend\BSP_Backlight.h</file>
+    </outputs>
+    <file>
+      <name>$PROJ_DIR$\..\..\Mod_SysClock\Depend\BSP_CLK.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 22</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 16 44 18 30</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 18 16 44 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Depend\BSP_IWDG.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 13</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 15</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 42 44 41 30</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 41 42 44 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Src\Mod_IWDG.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 49</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 23</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 4 1 41</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 4 1 41</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Mod_SysClock\Src\Mod_SysClock.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 7 5 18</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 7 5 18</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Mod_Systemtick\Depend\BSP_Systick.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51 44 50 30</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 50 51 44 30</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\Mod_Systemtick\Src\Mod_SystemTick.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 24</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 29</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 9 50 11</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 11 9 50</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ExMain.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21 19 20</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 21 19 20</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Depend\BSP_Adc_NTC.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 46</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 38</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 41 42 44 30 33</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 40</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\Src\Mod_Adc_NTC.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45</file>
+        </tool>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 37 35 41</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\Example.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 34 22 15 25 31 23 26 29 28 39</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs/>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+
