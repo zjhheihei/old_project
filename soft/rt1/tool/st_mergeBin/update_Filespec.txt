@@ -1,0 +1,180 @@
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//此文件描述升级文件的二进制结构组成
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1、文件采用二进制的方式存储，采用 [描述区]+[数据区]的组成方式,文件扩展名.tuf(可以直接修改成.bin文件使用)。
+2、文件采用128 Byte的整数倍的长度方式存储。
+3、文件的首128 Byte的描述区，用于表示文件的版本、校验文、文件[升级数据]的大小。
+4、[数据区]由单片机的运行Bin文件转换而来，采用128Byte为一个块的方式加密存储，原始文件采用0xFF进行128Byte补齐。
+5、[描述区]数据结构
+//-------------------------------------------------------------------------
+文本块 96Byte(0-95)
+Name:EA22Valve  名称
+Date:2018-08-28 发布日期
+//-------------------------------------------------------------------------
+功能块 32Byte(96-127)
+字节序:大端模式，高位在前，低位在后。
+长度(Byte):    12           4              4             4           4          4  
+说明      : | 保留 | 数据明码校验文 | 数据区字节数 | 数据区CRC32 | 版本号 | 描述区校验文 |
+//-------------------------------------------------------------------------
+6、当前版本号: 0x00000001。
+7、0x00000001版本[数据区]加密算法。
+   数据区采用64Bit的密钥和文件进行异或的计算。密钥根据计算的位置采用循环左移的策略。
+   
+   Key[0]...Key[7] = 0x89 8E 3C 72 A7 19 F4 5D
+   Ciphertext[0]...[7] = (Plaintext[0]...Plaintext[7])^(Key[0]...Key[7])
+   Key[0]...Key[7] 循环左移1Bit
+   Ciphertext[8]...[15] = (Plaintext[8]...Plaintext[15])^(Key[0]...Key[7])
+   Key[0]...Key[7] 循环左移1Bit
+   Ciphertext[16]...[23] = (Plaintext[16]...Plaintext[23])^(Key[0]...Key[7])
+   .
+   .
+   .
+   Key[0...Key[7] 循环左移1Bit
+   Ciphertext[120]...[127] = (Plaintext[120]...Plaintext[127])^(Key[0...Key[7])
+8、密钥值: 0x89 8E 3C 72 A7 19 F4 5D
+
+//解密算法C代码
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//#define KEYVAL  0x89,0x8E,0x3C,0x72,0xA7,0x19,0xF4,0x5D
+//-------------------------------------------------------------------------------------------------
+//名称: 文件解码
+//功能: 传入密文，传出明文
+//入口: 
+//        _Mix_binf   文件入口指针                    <<---->>
+//        _In_Length  文件长度,必须是128的倍数        <<----
+//出口: 
+//-------------------------------------------------------------------------------------------------
+void Decrypt(INT8U* _Mix_binf,INT8U _In_Length)
+{
+    INT8U Key[8]={(INT8U)0x89,(INT8U)0x8E,(INT8U)0x3C,(INT8U)0x72,(INT8U)0xA7,(INT8U)0x19,(INT8U)0xF4,(INT8U)0x5D,};
+    INT8U i;
+    INT8U Length,BaseIndex;
+
+    if(_In_Length < 128)
+    {
+        return;
+    }
+    
+    Length = _In_Length;
+    BaseIndex = 0;
+    while(0!=Length)
+    {
+        Key[0] = (INT8U)0x89;
+        Key[1] = (INT8U)0x8E;
+        Key[2] = (INT8U)0x3C;
+        Key[3] = (INT8U)0x72;
+        Key[4] = (INT8U)0xA7;
+        Key[5] = (INT8U)0x19;
+        Key[6] = (INT8U)0xF4;
+        Key[7] = (INT8U)0x5D;
+
+        for(i=0 ;i<16 ;i++)
+        {
+            _Mix_binf[0+i*8+BaseIndex] = _Mix_binf[0+i*8+BaseIndex] ^ Key[0];
+            _Mix_binf[1+i*8+BaseIndex] = _Mix_binf[1+i*8+BaseIndex] ^ Key[1];
+            _Mix_binf[2+i*8+BaseIndex] = _Mix_binf[2+i*8+BaseIndex] ^ Key[2];
+            _Mix_binf[3+i*8+BaseIndex] = _Mix_binf[3+i*8+BaseIndex] ^ Key[3];
+            _Mix_binf[4+i*8+BaseIndex] = _Mix_binf[4+i*8+BaseIndex] ^ Key[4];
+            _Mix_binf[5+i*8+BaseIndex] = _Mix_binf[5+i*8+BaseIndex] ^ Key[5];
+            _Mix_binf[6+i*8+BaseIndex] = _Mix_binf[6+i*8+BaseIndex] ^ Key[6];
+            _Mix_binf[7+i*8+BaseIndex] = _Mix_binf[7+i*8+BaseIndex] ^ Key[7];
+
+            char lastkeybit;
+            if(Key[0] & 0x80)
+            {
+                lastkeybit = 0x01;
+            }
+            else
+            {
+                lastkeybit = 0x00;
+            }
+            unsigned char ics;
+            for(ics=0;ics<7;ics++)
+            {
+                Key[ics] = Key[ics]<<1;
+                if(Key[ics+1] & 0x80)
+                {
+                    Key[ics] |= 0x01;
+                }
+            }
+            Key[ics] = Key[ics]<<1;
+            Key[ics] |= lastkeybit;
+        }
+        if(Length < 128)
+        {
+            break;
+        }
+        Length = Length-128;
+        BaseIndex += 128;
+    }
+}
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+9、校验文算法(数据明码\描述区)
+   校验文采用32Bit固定数据和文件内容(32Bit为一组)进行异或计算，再累加的策略，文件的奇偶顺序，采用不同的校验字
+   
+   CheckSum[0]...[3]  = 0x00 00 00 00
+   CheckSum[0]...[3] += File_Byte[0]...[3]   ^ CheckSumWordEven[0]...[3]
+   CheckSum[0]...[3] += File_Byte[4]...[7]   ^ CheckSumWordOdd[0]...[3]
+   CheckSum[0]...[3] += File_Byte[8]...[11]  ^ CheckSumWordEven[0]...[3]
+   CheckSum[0]...[3] += File_Byte[12]...[15] ^ CheckSumWordOdd[0]...[3]
+   .
+   .
+   .
+   CheckSum[0]...[3] += File_Byte[n-3]...[n] ^ CheckSumWordOdd[0]...[3]
+   
+10、校验字的值
+    CheckSumWordEven[0]...[3] = 0x39 EA 2E 76
+    CheckSumWordOdd[0]...[3]  = 0x82 B4 53 C3
+//----------------------------------------------------------------------------------
+//校验和算法C代码
+//----------------------------------------------------------------------------------
+#define CheckSumWordEven          0x39ea2e76
+#define CheckSumWordOdd           0x82b453c3
+
+static INT32U MakeOneCheckText(INT32U Data,INT32U Count)
+{
+    if(Count&0x00000001)
+    {
+        Data=Data^CheckSumWordOdd;
+    }
+    else
+    {
+        Data=Data^CheckSumWordEven;
+    }
+    return(Data);
+}
+
+INT32U MakeCheckSumText(INT8U* pData,INT32U Length_Bytes)
+{
+    INT32U iWords,This_ids;
+    INT32U Index;
+    INT32U MakeSum,ReadData;
+    iWords = (Length_Bytes)/4;
+    This_ids = 0;
+    MakeSum = 0;
+    Index = 0;
+    while(iWords)
+    {
+        ReadData = (INT32U)pData[Index]&0x000000ff;
+        ReadData = ReadData<<8;
+        ReadData = ReadData|((INT32U)pData[Index+1]&0x000000ff);
+        ReadData = ReadData<<8;
+        ReadData = ReadData|((INT32U)pData[Index+2]&0x000000ff);
+        ReadData = ReadData<<8;
+        ReadData = ReadData|((INT32U)pData[Index+3]&0x000000ff);
+        MakeSum+=MakeOneCheckText(ReadData,This_ids);
+        Index = Index+4;
+        iWords--;
+        This_ids++;
+    }
+    return(MakeSum);
+}
+//+++++++++++++++++++++++++++++End+++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+

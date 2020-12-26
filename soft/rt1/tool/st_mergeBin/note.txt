@@ -1,0 +1,9 @@
+工具软件或固件发布
+//文件说明
+MCUboot区文件                       ------   generalBoot_STM8L052R8T6_20191112.bin 
+MCU应用代码编译控制文件             ------   app_lnkstm8l052r8.icf
+flash划分说明和校验文算法           ------   STM8L052R8T6_flash划分规范.txt
+升级文件结构说明                    ------   update_Filespec.txt
+
+固件合并工具                        ------   mergeBin_STM8L052R8T6
+升级文件生产工具                    ------   createUpdateFiles

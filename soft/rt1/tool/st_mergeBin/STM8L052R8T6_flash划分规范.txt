@@ -1,0 +1,81 @@
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//STM8L052R8T6的BOOTLOAD功能区的FLASH划分说明
+//日期:2019.11.11
+//版本:V10
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1. STM8L052R8T6 Flash 大小为64k, 256 pages,512 blocks,最小块单元为128bytes.(1page=2block=256bytes,1block=128bytes).
+2. flash地址范围 0x00 8000---0x01 FFFF
+3. 根据bootload的应用分析，把flash划分成3个扇区，BOOT区，RUN区，UPDATE区.
+   BOOT区:   用于存放引导代码，实现RUN区的校验和升级功能.
+   RUN区:    用于存放主运行代码.
+   UPDATE区: 用于存放升级的代码，接收到完成的代码后，由BOOT区代码拷贝到RUN区.
+4. 各个区的大小和地址分配
+   BOOT区:   2k    0x00 8000---0x00 87FF   0-15 block
+   RUN区:    31K   0x00 8800---0x01 03FF   16-263
+   UPDATE区: 31K   0x01 0400---0x01 FFFF   264-511
+5. 标识字符,设计3个32bit的标识字符，用于描述有效程序代码的大小、升级标示、有效代码的校验和。
+   标示的字节序采用大端模式。
+   RUN区标识位置:
+     0x0x01 03F4---0x0x01 03F7(地址)             升级标识，0x62ABF5A4--升级请求,0x519AE493--升级完毕(正常运行),0x8D731A75--正在接收数据
+     0x0x01 03F8---0x0x01 03FB                   有效代码的校验和
+     0x0x01 03FC---0x0x01 03FF                   有效代码大小,字节长度,如0x1000,表示4096Byte的有效代码.
+6. 校验和计算方法: 校验和
+
+   校验文采用32Bit固定数据和文件进行异或计算，再累加的策略，文件的奇偶顺序，采用不同的校验字
+   校验字的值
+    CheckSumWordEven[0]...[3] = 0x39 EA 2E 76
+    CheckSumWordOdd[0]...[3]  = 0x82 B4 53 C3
+   
+   CheckSum[0]...[3]  = 0x00 00 00 00
+   CheckSum[0]...[3] += File[0]...[3]   ^ CheckSumWordEven[0]...[3]
+   CheckSum[0]...[3] += File[4]...[7]   ^ CheckSumWordOdd[0]...[3]
+   CheckSum[0]...[3] += File[8]...[11]  ^ CheckSumWordEven[0]...[3]
+   CheckSum[0]...[3] += File[12]...[15] ^ CheckSumWordOdd[0]...[3]
+   .
+   .
+   .
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//校验和算法C代码
+//----------------------------------------------------------------------------------
+#define CheckSumWordEven          0x39ea2e76
+#define CheckSumWordOdd           0x82b453c3
+
+static INT32U MakeOneCheckText(INT32U Data,INT32U Count)
+{
+    if(Count&0x00000001)
+    {
+        Data=Data^CheckSumWordOdd;
+    }
+    else
+    {
+        Data=Data^CheckSumWordEven;
+    }
+    return(Data);
+}
+
+INT32U MakeCheckSumText(INT8U* pData,INT32U Length_Bytes)
+{
+    INT32U iWords,This_ids;
+    INT32U Index;
+    INT32U MakeSum,ReadData;
+    iWords = (Length_Bytes)/4;
+    This_ids = 0;
+    MakeSum = 0;
+    Index = 0;
+    while(iWords)
+    {
+        ReadData = (INT32U)pData[Index]&0x000000ff;
+        ReadData = ReadData<<8;
+        ReadData = ReadData|((INT32U)pData[Index+1]&0x000000ff);
+        ReadData = ReadData<<8;
+        ReadData = ReadData|((INT32U)pData[Index+2]&0x000000ff);
+        ReadData = ReadData<<8;
+        ReadData = ReadData|((INT32U)pData[Index+3]&0x000000ff);
+        MakeSum+=MakeOneCheckText(ReadData,This_ids);
+        Index = Index+4;
+        iWords--;
+        This_ids++;
+    }
+    return(MakeSum);
+}
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
