@@ -1573,7 +1573,7 @@
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state>hd_rt1_36wifi.bin</state>
+          <state>hd_rt1.36i.bin</state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
@@ -2116,7 +2116,7 @@
         <name>$PROJ_DIR$\..\..\module\mod_ntc3380\mod_ntc3380.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\..\module\mod_ntc3380\Mod_NTC3380.h</name>
+        <name>$PROJ_DIR$\..\..\module\mod_ntc3380\mod_ntc3380.h</name>
       </file>
     </group>
     <group>
@@ -2230,7 +2230,7 @@
         <name>$PROJ_DIR$\..\..\module\mod_watchDog\mod_watchdog.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\..\module\mod_watchDog\mod_watchdog.h</name>
+        <name>$PROJ_DIR$\..\..\module\mod_watchdog\mod_watchdog.h</name>
       </file>
     </group>
   </group>

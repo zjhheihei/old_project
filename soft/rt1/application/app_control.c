@@ -796,11 +796,11 @@ void app_control_timeOutHandle(void)
                     if(s_sysPara.timeContorl.disTimeControlFlag)
                     {
                         s_sysPara.timeContorl.disTimeControlFlag = false;
-                        #ifdef NDEBUG
+                        //#ifdef NDEBUG
                         app_control_timeOut_set(DELAY_TIME_CONTROL_TIME,ms_50000); 
-                        #else
-                        app_control_timeOut_set(DELAY_TIME_CONTROL_TIME,ms_10000); 
-                        #endif
+                        //#else
+                        //app_control_timeOut_set(DELAY_TIME_CONTROL_TIME,ms_10000); 
+                        //#endif
                     }
                     else 
                     {

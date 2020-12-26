@@ -183,11 +183,11 @@ void app_output_timeControlCheck(void)
             {               
                 uint16_t passTick = 0;
                 passTick = GetSysTickMillisecond() - timeConOneMinuteCyc;
-                #ifdef NDEBUG
+                //#ifdef NDEBUG
                 if(ms_60000 <= passTick)
-                #else
-                if(ms_10000 <= passTick)
-                #endif
+                //#else
+                //if(ms_10000 <= passTick)
+                //#endif
                 {
                     timeConOneMinuteCyc = GetSysTickMillisecond();
                     ptSys->timeContorl.runMinute++; 

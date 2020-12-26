@@ -2,7 +2,7 @@
 
 <workspace>
   <project>
-    <path>$WS_DIR$\rt1_13.ewp</path>
+    <path>$WS_DIR$\hd_rt1.13.ewp</path>
   </project>
   <batchBuild/>
 </workspace>

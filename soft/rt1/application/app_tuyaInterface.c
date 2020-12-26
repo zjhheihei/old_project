@@ -216,10 +216,10 @@ void controlData_update(void)
 {
     INT8U i;
     unsigned char ret = FALSE;
-    #ifndef NDEBUG
-    volatile static unsigned char testDat = FALSE;
-    volatile static unsigned char testRet = FALSE;
-    #endif
+    //#ifndef NDEBUG
+    //volatile static unsigned char testDat = FALSE;
+    //volatile static unsigned char testRet = FALSE;
+    //#endif
     for(i = 0;i < max_mendred_control_reg;i++)
     {
         if(mcdRegStateBits_update_ready & menred_controlData[i].mcd_reg_stateBits)
@@ -481,9 +481,9 @@ void app_pushControlDataFromDevice_update(INT8U in_reg_addr,INT16U in_reg_detail
 //-------------------------------------------------------------------------------------------------
 BOOLEAN app_pullControlDataFromThis(INT8U* out_reg_addr,INT16U* out_reg_details)
 {
-    #ifndef NDEBUG
-    volatile static INT8U checkData = 0;
-    #endif
+    //#ifndef NDEBUG
+    //volatile static INT8U checkData = 0;
+    //#endif
     INT8U i;
     for(i = 0;i < max_mendred_control_reg;i++)
     {
@@ -492,9 +492,9 @@ BOOLEAN app_pullControlDataFromThis(INT8U* out_reg_addr,INT16U* out_reg_details)
             *out_reg_addr = menred_controlData[i].mcd_reg_addr;
             *out_reg_details = menred_controlData[i].mcd_reg_details;
             menred_controlData[i].mcd_reg_stateBits &= (~mcdRegStateBits_download_ok);
-            #ifndef NDEBUG
-            checkData = *out_reg_addr;
-            #endif
+            //#ifndef NDEBUG
+            //checkData = *out_reg_addr;
+            //#endif
             
             return(BN_TRUE);
         }

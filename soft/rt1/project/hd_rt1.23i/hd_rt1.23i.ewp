@@ -729,7 +729,7 @@
         </option>
         <option>
           <name>IlinkIcfFile</name>
-          <state>F:\2020\work\2020\github\me\thermostat_RT\software\rt1\project\rt1.23_hdsc\hc32l136.icf</state>
+          <state>D:\2020\work\2020\github\me\old_project\soft\rt1\project\hd_rt1.23i\hc32l136.icf</state>
         </option>
         <option>
           <name>IlinkIcfFileSlave</name>
@@ -1573,7 +1573,7 @@
         </option>
         <option>
           <name>OOCOutputFile</name>
-          <state>rt1_23wifi.bin</state>
+          <state>hd_rt1.23i.bin</state>
         </option>
         <option>
           <name>OOCCommandLineProducer</name>
@@ -2116,7 +2116,7 @@
         <name>$PROJ_DIR$\..\..\module\mod_ntc3380\mod_ntc3380.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\..\module\mod_ntc3380\Mod_NTC3380.h</name>
+        <name>$PROJ_DIR$\..\..\module\mod_ntc3380\mod_ntc3380.h</name>
       </file>
     </group>
     <group>
@@ -2230,7 +2230,7 @@
         <name>$PROJ_DIR$\..\..\module\mod_watchDog\mod_watchdog.c</name>
       </file>
       <file>
-        <name>$PROJ_DIR$\..\..\module\mod_watchDog\mod_watchdog.h</name>
+        <name>$PROJ_DIR$\..\..\module\mod_watchdog\mod_watchdog.h</name>
       </file>
     </group>
   </group>

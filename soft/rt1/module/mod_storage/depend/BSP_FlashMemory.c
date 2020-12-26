@@ -300,10 +300,10 @@ void bsp_flash_write_oneBlock(INT16U blockNum,INT8U *ptDat)
     u32TimeOut = FLASH_TIMEOUT_INIT;
     
     INT32U addr = blockNum * 128;
-    #ifndef NDEBUG
-    volatile static uint32_t testAddress;
-    testAddress = addr;
-    #endif
+//    #ifndef NDEBUG
+//    volatile static uint32_t testAddress;
+//    testAddress = addr;
+//    #endif
     
     static uint32_t lastPage = 0;
            uint32_t currentPage = 0;
@@ -373,12 +373,12 @@ void Prg_WriteEepromBytes(INT8U* _In_pWRData,INT32U _In_FlashAddr,INT8U _In_Leng
             BlockBuff[i] = _In_pWRData[i];
         }
         FlashBlockNumber = _In_FlashAddr / 128;
-        #ifndef NDEBUG
-        volatile static uint16_t testFlashBlockNumber;
-        volatile static uint8_t  testlength;
-        testFlashBlockNumber = FlashBlockNumber;
-        testlength = _In_Length;
-        #endif
+        //#ifndef NDEBUG
+        //volatile static uint16_t testFlashBlockNumber;
+        //volatile static uint8_t  testlength;
+        //testFlashBlockNumber = FlashBlockNumber;
+       // testlength = _In_Length;
+        //#endif
         bsp_flash_write_oneBlock(FlashBlockNumber,&BlockBuff[0]);        
     }
 }
