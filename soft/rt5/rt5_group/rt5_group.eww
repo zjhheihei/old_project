@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\..\project\rt5.13\rt5.13.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\project\rt5.23i\rt5.23i.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\project\rt5.36i\rt5.36i.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\project\rt5.36t\rt5.36t.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>release_all</name>
+      <member>
+        <project>rt5.13</project>
+        <configuration>Release</configuration>
+      </member>
+      <member>
+        <project>rt5.23i</project>
+        <configuration>Release</configuration>
+      </member>
+      <member>
+        <project>rt5.36i</project>
+        <configuration>Release</configuration>
+      </member>
+      <member>
+        <project>rt5.36t</project>
+        <configuration>Release</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

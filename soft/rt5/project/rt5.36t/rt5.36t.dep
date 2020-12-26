@@ -1,0 +1,2919 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>1398240050</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\application\app_interval.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_backlight.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_mcu_api.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_system.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_system.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_protocol.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_mcu_api.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_wifi.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_protocol.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_backlight.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_control.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_control.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_display.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_display.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_interval.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuyaInterface.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_openWindow.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_openWindow.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_outputLogic.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuyaInterface.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_relay.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_relay.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_updateFromWIFI.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_wifi.c</file>
+      <file>$PROJ_DIR$\DeviceSelect.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_preheating.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_backlight\depend\bsp_backlight.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_preheating.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_backlight\mod_backlight.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_key\depend\bsp_key.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_key\depend\bsp_key.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_backlight\mod_backlight.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_timming.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_outputLogic.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_wifi.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_backlight\depend\bsp_backlight.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_key\mod_key.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_key\mod_key.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_timming.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_updateFromWIFI.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_storage.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_key.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_key.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_softRtc.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_softRtc.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_main.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_storage.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_lcd_ls3\depend\bsp_lcd_ls3.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\depend\bsp_crc8.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\depend\bsp_crc8.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_real_time\depend\bsp_real_time.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\depend\BSP_CLOCK.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\Depend\BSP_Systick.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\mod_storage.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\depend\BSP_FlashMemory.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\Depend\BSP_Systick.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\mod_systemTick.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\depend\BSP_CLOCK.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\mod_systemTick.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\tuya_mcu_api.pbi</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\mod_storage.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_ntc3380\depend\bsp_ntc3380.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_ntc3380\mod_ntc3380.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_real_time\mod_real_time.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_real_time\mod_real_time.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_real_time\depend\bsp_real_time.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\depend\bsp_uartFull.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_relay\depend\bsp_relay.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_relay\mod_relay.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_lcd_ls3\mod_lcd_ls3.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_ntc3380\depend\bsp_ntc3380.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_lcd_ls3\depend\bsp_lcd_ls3.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_lcd_ls3\mod_lcd_ls3.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_ntc3380\mod_ntc3380.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_relay\mod_relay.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_relay\depend\bsp_relay.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\depend\BSP_FlashMemory.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\mod_sysClock.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\mod_sysClock.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_watchdog\mod_watchdog.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\mod_uartFull.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_relay.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_preheating.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_preheating.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\..\..\public\pbc_ringQueue\pbc_ringQueue.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\tuya_mcu_api.o</file>
+      <file>$PROJ_DIR$\..\..\module\mod_lcd_ls3\depend\SnailDataTypedef.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_main.pbi</file>
+      <file>$PROJ_DIR$\..\..\module\mod_watchDog\depend\BSP_WDT.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\tuya_protocol.__cstat.et</file>
+      <file>$PROJ_DIR$\..\..\module\mod_watchDog\depend\BSP_WDT.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_control.o</file>
+      <file>$PROJ_DIR$\..\..\module\mod_key\depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_real_time.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_timming.o</file>
+      <file>$TOOLKIT_DIR$\config\lnkstm8l052r8.icf</file>
+      <file>$PROJ_DIR$\..\..\module\mod_lcd_ls3\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_tuyaInterface.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_key.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_lcd_ls3.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_storage.pbi</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\Depend\SnailDataTypedef.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_ntc3380\depend\SnailDataTypedef.h</file>
+      <file>$PROJ_DIR$\..\..\public\pbc_ringQueue\pbc_ringQueue.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_openWindow.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_lcd_ls3.__cstat.et</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\depend\bsp_uartFull.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\mod_uartFull.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_watchDog\mod_watchdog.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_relay.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_interval.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_relay.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\tuya_protocol.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_FlashMemory.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\tuya_protocol.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_CLOCK.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_uartFull.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_relay.o</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\Depend\data_typedef.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_key.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_softRtc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_openWindow.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\pbc_ringQueue.o</file>
+      <file>$PROJ_DIR$\..\..\module\mod_watchDog\depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_crc8.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_key.o</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\depend\SnailDataTypedef.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_storage.pbi</file>
+      <file>$PROJ_DIR$\..\..\module\mod_key\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_real_time\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_lcd_ls3.o</file>
+      <file>$PROJ_DIR$\..\..\application\data_typedef.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_real_time.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_ntc3380.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\tuya_system.o</file>
+      <file>$PROJ_DIR$\..\..\module\mod_key\depend\SnailDataTypedef.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_relay.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\pbc_ringQueue.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_systemTick.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_FlashMemory.pbi</file>
+      <file>$PROJ_DIR$\..\..\module\mod_watchDog\depend\SnailDataTypedef.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\depend\SnailDataTypedef.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+      <file>$PROJ_DIR$\..\..\module\mod_backlight\depend\SnailDataTypedef.h</file>
+      <file>$TOOLKIT_DIR$\lib\dbgstm8smd.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_watchdog.pbi</file>
+      <file>$PROJ_DIR$\..\..\module\mod_backlight\depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_crc8.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_ntc3380.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_interval.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_key.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_lcd_ls3.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_CLOCK.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_relay.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_backlight.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_timming.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_outputLogic.o</file>
+      <file>$PROJ_DIR$\Debug\Exe\ls3_tuya.out</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_preheating.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_Systick.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_sysClock.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_wifi.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_uartFull.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_relay.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_lcd_ls3.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_ntc3380.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\tuya_system.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_backlight.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_key.pbi</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_WDT.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\depend\data_typedef.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\tuya_mcu_api.__cstat.et</file>
+      <file>$PROJ_DIR$\..\..\module\mod_watchDog\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_softRtc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_uartFull.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_updateFromWIFI.o</file>
+      <file>$PROJ_DIR$\..\..\module\mod_relay\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_backlight.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_main.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_outputLogic.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_real_time.pbi</file>
+      <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_main.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_storage.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_WDT.__cstat.et</file>
+      <file>$PROJ_DIR$\..\..\module\mod_relay\depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_CLOCK.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\tuya_system.__cstat.et</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_WDT.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_relay.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_ntc3380.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_real_time.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_FlashMemory.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_Systick.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_storage.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_backlight.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_key.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_uartFull.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_backlight.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_wifi.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_interval.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_storage.o</file>
+      <file>$PROJ_DIR$\..\..\module\mod_backlight\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_key.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_timming.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_key.o</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\Depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_uartFull.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_ntc3380.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_real_time.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_tuyaInterface.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_crc8.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_backlight.__cstat.et</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\Depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\depend\data_typedef.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_real_time.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_systemTick.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_wifi.__cstat.et</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\depend\SnailDataTypedef.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_sysClock.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_openWindow.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_backlight.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_updateFromWIFI.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_uartFull.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_watchdog.o</file>
+      <file>$PROJ_DIR$\..\..\module\mod_lcd_ls3\depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_display.pbi</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_updateFromWIFI.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_watchdog.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_sysClock.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp_ntc3380.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_storage.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_control.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_outputLogic.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_systemTick.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_softRtc.__cstat.et</file>
+      <file>$PROJ_DIR$\..\..\module\mod_ntc3380\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\mod_lcd_ls3.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_tuyaInterface.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_key.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_control.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_backlight.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\BSP_Systick.o</file>
+      <file>$PROJ_DIR$\..\..\module\mod_relay\depend\SnailDataTypedef.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_display.o</file>
+      <file>$PROJ_DIR$\..\..\public\pbc_ringQueue\depend\data_typedef.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_display.__cstat.et</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_ntc3380\depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_backlight.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_relay.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\pbc_ringQueue.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 166</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_system.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 140</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 198</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 175</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 8 6 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 3 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17 5</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8 159 28 73 21 267 59 64 1 0 6 5 2 137 113 80 63 40 19 43 17 85 206 3 157 25 79 54 29 38 69 110 20 35 12 47 14 33 45 156 132 192 117</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_mcu_api.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 88</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 182</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 8 6 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 3 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17 5</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 19 80 137 17 2 113 63 40 43 85 206 3 159 59 73 64 8 1 21 0 28 267 157 5 25 79 54 29 38 69 110 20 35 12 47 14 33 45 156 132 192 117</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_protocol.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 116</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 92</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 119</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35 25 79 156 69 33 117 3 157 29 47 28 159 8 54 38 110 20 12 14 45 132 192 6 2 137 113 59 80 73 63 64 40 1 19 21 43 0 17 267 85 206 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_backlight.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 163</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 264</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 256</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14 38 192 25 20 54 110 12 45 156 132 5 157 79 29 69 3 35 47 33 28 117 2 137 159 113 59 80 73 63 64 6 8 40 1 19 21 43 0 17 267 85 206</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_control.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 94</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 255</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 247</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 3 137 17 80 19 113 63 40 43 85 206 156 25 159 59 73 64 8 1 21 0 28 267 157 79 54 29 38 69 110 20 35 12 47 14 33 45 132 192 117 2 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_display.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 259</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 261</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 240</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110 45 54 12 25 38 20 14 157 79 29 69 3 35 47 33 28 156 267 159 137 113 59 80 73 63 64 6 8 40 1 19 21 43 0 17 85 206 5 2 132 192 117</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_interval.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 114</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 155</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 213</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8 159 28 73 21 267 59 64 1 0 137 113 80 63 6 40 19 43 17 85 206 157 25 79 54 29 38 69 110 3 20 35 12 47 14 33 45 156 132 192 117 2 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_tuyaInterface.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 100</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 253</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 223</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 47 29 156 157 3 28 79 69 35 33 117 25 54 38 110 20 12 14 45 132 192 159 137 113 59 80 73 63 64 6 8 40 1 19 21 43 0 17 267 85 206 5 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_openWindow.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 107</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 234</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 126</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 17 117 137 3 6 80 19 113 63 40 43 156 25 159 59 73 64 8 1 21 0 28 157 79 54 29 38 69 110 20 35 12 47 14 33 45 132 192 2 267 85 206 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_relay.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 82</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 265</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 201</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59 267 1 64 0 159 73 8 21 28 137 113 80 63 6 40 19 43 17 85 206 157 25 79 54 29 38 69 110 3 20 35 12 47 14 33 45 156 132 192 117 5 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_updateFromWIFI.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 186</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 236</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 242</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69 117 3 33 79 35 156 25 157 29 47 28 159 54 38 110 20 12 14 45 132 192 6 2 137 113 59 80 73 63 64 8 40 1 19 21 43 0 17 267 85 206 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_wifi.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 212</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 230</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 170</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 137 17 80 19 113 63 40 43 85 206 159 59 73 64 8 1 21 0 28 267 157 25 79 54 29 38 69 110 3 20 35 12 47 14 33 45 156 132 192 117 5 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_preheating.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 83</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 167</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 84</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69 117 3 33 79 35 156 25 157 29 47 28 159 54 38 110 20 12 14 45 132 192 6 2 137 113 59 80 73 63 64 8 40 1 19 21 43 0 17 267 85 206 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_key\depend\bsp_key.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 218</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 216</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 177</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 141 95 113 25 134 180</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113 134 95 25 180 141</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_backlight\mod_backlight.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 188</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 235</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 211</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 27 149</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 149</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_outputLogic.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 165</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 248</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 190</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 35 79 156 69 33 117 2 157 29 3 47 28 54 38 110 20 12 14 45 132 192 137 159 113 59 80 73 63 64 6 8 40 1 19 21 43 0 17 267 85 206 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_backlight\depend\bsp_backlight.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 176</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 225</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 208</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 149 152 113 25 215 180</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 180 113 152 25 215 149</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_key\mod_key.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 130</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 124</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 158</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 31 141 38</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38 31 141</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_timming.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 97</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 217</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 164</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 33 69 117 79 35 156 25 157 29 3 47 28 54 38 110 20 12 14 45 132 192 137 159 113 59 80 73 63 64 6 8 40 1 19 21 43 0 17 267 85 206 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_storage.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 214</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 246</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 133</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12 156 54 110 45 132 25 38 20 14 192 157 79 29 69 3 35 47 33 28 117 2 137 159 113 59 80 73 63 64 6 8 40 1 19 21 43 0 17 267 85 206 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_key.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 209</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 254</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 101</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1 59 64 0 206 159 73 8 21 28 267 137 113 80 63 6 40 19 43 17 85 157 25 79 54 29 38 69 110 3 20 35 12 47 14 33 45 156 132 5 2 192 117</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_softRtc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 125</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 250</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 184</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 69 117 33 2 79 35 156 25 157 29 3 47 28 54 38 110 20 12 14 45 132 192 137 159 113 59 80 73 63 64 6 8 40 1 19 21 43 0 17 267 85 206 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 189</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 193</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 137 157 156 267 85 192 117 132 206 159 25 113 79 59 54 80 29 73 38 63 69 64 110 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 33 69 117 79 35 156 25 157 29 3 47 28 54 38 110 20 12 14 45 132 192 137 159 113 59 80 73 63 64 6 8 40 1 19 21 43 0 17 267 85 206 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_storage\depend\bsp_crc8.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 153</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 224</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 129</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 157 156 267 85 192 117 132 206 159</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 156 132 206 267 85 157 192 117 159</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_systemTick\Depend\BSP_Systick.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 257</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 168</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 205</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 104 226 113 25 219 180</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 180 113 226 25 219 104</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_storage\depend\BSP_FlashMemory.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 204</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 118</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 145</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 231 199 113 25 232 180</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113 180 199 25 232 231</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_systemTick\mod_systemTick.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 144</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 229</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 249</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 123 56 59</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59 56 123</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_sysClock\depend\BSP_CLOCK.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 161</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 120</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 197</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 147 87 113 25 178 180</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 180 113 87 25 178 147</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_storage\mod_storage.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 194</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 207</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 103</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 77 231 25 199 54 50 157 156 267 85 192 117 132 206 159</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 267 54 199 50 231 157 85 206 77 25 159 156 132 192 117</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_ntc3380\depend\bsp_ntc3380.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 154</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 245</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 139</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 105 263 113 25 251 180</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113 180 263 25 251 105</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_real_time\mod_real_time.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 96</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 138</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 191</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 64 159 157 156 267 85 192 117 132 206 51 135 180</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 156 117 159 132 192 157 51 267 85 206 135 180 64</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_real_time\depend\bsp_real_time.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 228</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 203</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 222</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 159 157 156 267 85 192 117 132 206 135 180 113</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 85 192 135 267 117 156 157 132 206 180 159 113</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_uartFull\depend\bsp_uartFull.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 121</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 220</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 171</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 131 262 113 25 241 180 106</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113 106 262 25 241 180 131</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_lcd_ls3\mod_lcd_ls3.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 136</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 252</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 160</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 48 89 25 73</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 73 48 89</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_lcd_ls3\depend\bsp_lcd_ls3.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 173</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 108</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 102</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 89 239 113 25 99 180</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 180 113 239 25 99 89</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_ntc3380\mod_ntc3380.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 202</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 174</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 221</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 71 105 25 63</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 63 105 71 25</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_relay\mod_relay.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 122</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 142</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 172</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 68 258 69</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 258 69 68</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_relay\depend\bsp_relay.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 112</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 162</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 258 196 113 25 187 180</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 187 113 196 25 180 258</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_sysClock\mod_sysClock.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 169</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 233</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 244</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 52 227 79</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52 79 227</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_uartFull\mod_uartFull.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 210</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 237</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 185</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 181 109</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 181 109</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\public\pbc_ringQueue\pbc_ringQueue.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 127</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 266</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 143</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 260 106</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 260 106</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_watchDog\depend\BSP_WDT.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 200</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 195</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 179</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 146 128 113 25 183 180</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 180 113 128 25 183 146</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_watchDog\mod_watchdog.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 238</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 243</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 151</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 91 146</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 91 146</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\ls3_tuya.out</name>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 98 163 94 259 114 209 189 107 165 83 82 125 214 97 100 186 212 176 161 153 204 218 173 154 228 112 257 121 200 188 130 136 202 96 122 194 169 144 210 238 127 88 116 140 148 150</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs>
+      <file>$PROJ_DIR$\..\..\application\app_interval.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_backlight.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_cfg.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_mcu_api.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_system.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_system.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_protocol.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_mcu_api.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_wifi.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_protocol.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_backlight.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_control.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_control.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_display.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_display.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_interval.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuyaInterface.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_openWindow.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_openWindow.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_outputLogic.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_tuyaInterface.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_relay.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_relay.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_updateFromWIFI.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_wifi.c</file>
+      <file>$PROJ_DIR$\DeviceSelect.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_preheating.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_backlight\depend\bsp_backlight.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_preheating.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_backlight\mod_backlight.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_key\depend\bsp_key.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_key\depend\bsp_key.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_backlight\mod_backlight.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_timming.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_outputLogic.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_wifi.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_backlight\depend\bsp_backlight.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_key\mod_key.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_key\mod_key.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_timming.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_updateFromWIFI.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_storage.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_key.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_key.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_softRtc.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_softRtc.h</file>
+      <file>$PROJ_DIR$\..\..\application\app_main.c</file>
+      <file>$PROJ_DIR$\..\..\application\app_storage.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_lcd_ls3\depend\bsp_lcd_ls3.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\depend\bsp_crc8.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\depend\bsp_crc8.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_real_time\depend\bsp_real_time.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\depend\BSP_CLOCK.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\Depend\BSP_Systick.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\mod_storage.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\depend\BSP_FlashMemory.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\Depend\BSP_Systick.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\mod_systemTick.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\depend\BSP_CLOCK.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\mod_systemTick.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\mod_storage.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_ntc3380\depend\bsp_ntc3380.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_ntc3380\mod_ntc3380.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_real_time\mod_real_time.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_real_time\mod_real_time.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_real_time\depend\bsp_real_time.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\depend\bsp_uartFull.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_relay\depend\bsp_relay.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_relay\mod_relay.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_lcd_ls3\mod_lcd_ls3.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_ntc3380\depend\bsp_ntc3380.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_lcd_ls3\depend\bsp_lcd_ls3.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_lcd_ls3\mod_lcd_ls3.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_ntc3380\mod_ntc3380.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_relay\mod_relay.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_relay\depend\bsp_relay.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\depend\BSP_FlashMemory.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\mod_sysClock.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\mod_sysClock.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_watchdog\mod_watchdog.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\mod_uartFull.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\..\..\public\pbc_ringQueue\pbc_ringQueue.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_lcd_ls3\depend\SnailDataTypedef.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_watchDog\depend\BSP_WDT.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_watchDog\depend\BSP_WDT.c</file>
+      <file>$PROJ_DIR$\..\..\module\mod_key\depend\SnailMacro.h</file>
+      <file>$TOOLKIT_DIR$\config\lnkstm8l052r8.icf</file>
+      <file>$PROJ_DIR$\..\..\module\mod_lcd_ls3\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\Depend\SnailDataTypedef.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_ntc3380\depend\SnailDataTypedef.h</file>
+      <file>$PROJ_DIR$\..\..\public\pbc_ringQueue\pbc_ringQueue.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\depend\bsp_uartFull.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\mod_uartFull.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_watchDog\mod_watchdog.c</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\Depend\data_typedef.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_watchDog\depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\depend\SnailDataTypedef.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xencoding_limits.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_key\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_real_time\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\..\..\application\data_typedef.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_key\depend\SnailDataTypedef.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_watchDog\depend\SnailDataTypedef.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\depend\SnailDataTypedef.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlstm8smn.a</file>
+      <file>$PROJ_DIR$\..\..\module\mod_backlight\depend\SnailDataTypedef.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_backlight\depend\SnailMacro.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\depend\iostm8l052r8.h</file>
+      <file>$TOOLKIT_DIR$\inc\io_macros.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\depend\data_typedef.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_watchDog\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_relay\depend\iostm8l052r8.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlstm8smn.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_relay\depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\depend\SnailMacro.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_backlight\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\Depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_systemTick\Depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_sysClock\depend\data_typedef.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\depend\SnailDataTypedef.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_storage\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_lcd_ls3\depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_ntc3380\depend\iostm8l052r8.h</file>
+      <file>$PROJ_DIR$\Release\Obj\app_timming.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_backlight.o</file>
+      <file>$PROJ_DIR$\..\..\module\mod_relay\depend\SnailDataTypedef.h</file>
+      <file>$PROJ_DIR$\Release\Obj\BSP_CLOCK.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\BSP_WDT.o</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_lcd_ls3.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_outputLogic.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_key.o</file>
+      <file>$PROJ_DIR$\Release\Obj\BSP_FlashMemory.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_backlight.pbi</file>
+      <file>$PROJ_DIR$\..\..\public\pbc_ringQueue\depend\data_typedef.h</file>
+      <file>$PROJ_DIR$\..\..\module\mod_uartFull\depend\SnailMacro.h</file>
+      <file>$PROJ_DIR$\Release\Obj\app_storage.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_preheating.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\app_control.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_openWindow.o</file>
+      <file>$PROJ_DIR$\Release\Obj\BSP_Systick.o</file>
+      <file>$PROJ_DIR$\Release\Obj\tuya_protocol.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_lcd_ls3.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_softRtc.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_crc8.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_backlight.o</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_relay.__cstat.et</file>
+      <file>$PROJ_DIR$\..\..\module\mod_ntc3380\depend\SnailMacro.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\Release\Obj\app_wifi.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\BSP_FlashMemory.o</file>
+      <file>$PROJ_DIR$\Release\Obj\BSP_WDT.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_relay.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_tuyaInterface.o</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_ntc3380.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_relay.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_uartFull.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_systemTick.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_updateFromWIFI.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\app_key.o</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_storage.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\app_preheating.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_relay.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_tuyaInterface.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_ntc3380.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_backlight.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_outputLogic.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\lib\dbgstm8smn.a</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_uartFull.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\app_interval.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_interval.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\app_backlight.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\pbc_ringQueue.o</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_backlight.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\tuya_protocol.o</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_real_time.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Exe\rt5.36t.hex</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_sysClock.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_key.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\app_updateFromWIFI.o</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_sysClock.o</file>
+      <file>$PROJ_DIR$\Release\Obj\BSP_Systick.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\tuya_mcu_api.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_uartFull.o</file>
+      <file>$PROJ_DIR$\Release\Exe\ls3_tuya.out</file>
+      <file>$PROJ_DIR$\Release\Obj\tuya_system.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\app_display.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_ntc3380.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\app_interval.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_relay.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\tuya_system.o</file>
+      <file>$PROJ_DIR$\Release\Obj\BSP_Systick.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\tuya_mcu_api.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_relay.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_key.o</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_key.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_ntc3380.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_display.o</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_backlight.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_outputLogic.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_key.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_wifi.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_relay.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_key.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_lcd_ls3.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\BSP_FlashMemory.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\BSP_WDT.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_lcd_ls3.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_real_time.o</file>
+      <file>$PROJ_DIR$\Release\Obj\pbc_ringQueue.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_watchdog.o</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_uartFull.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_lcd_ls3.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\BSP_CLOCK.o</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_uartFull.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_wifi.o</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_ntc3380.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_real_time.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\app_key.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_storage.o</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_watchdog.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_control.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\tuya_system.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\pbc_ringQueue.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_real_time.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_storage.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\app_main.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_real_time.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\BSP_CLOCK.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_preheating.o</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_storage.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_updateFromWIFI.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_openWindow.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\app_openWindow.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_lcd_ls3.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_main.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_softRtc.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_backlight.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_timming.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_sysClock.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_relay.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_systemTick.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_relay.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_storage.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_crc8.o</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_ntc3380.o</file>
+      <file>$PROJ_DIR$\Release\Obj\tuya_mcu_api.o</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_key.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_softRtc.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\tuya_protocol.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_watchdog.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_uartFull.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\app_main.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_tuyaInterface.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app_display.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_systemTick.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_backlight.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\app_control.__cstat.et</file>
+      <file>$PROJ_DIR$\Release\Obj\mod_real_time.o</file>
+      <file>$PROJ_DIR$\Release\Obj\app_timming.o</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp_crc8.pbi</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 192</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_system.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 198</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 193</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 230</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 8 6 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 3 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17 5</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8 113 28 72 21 156 59 63 1 0 6 5 2 104 96 79 62 40 19 43 17 81 122 3 112 25 78 54 29 38 68 94 20 35 12 47 14 33 45 111 101 119 97</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_mcu_api.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 254</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 190</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 200</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 8 6 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 3 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17 5</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6 19 79 104 17 2 96 62 40 43 81 122 3 113 59 72 63 8 1 21 0 28 156 112 5 25 78 54 29 38 68 94 20 35 12 47 14 33 45 111 101 119 97</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_tuya_sdk\tuya_protocol.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 182</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 149</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 257</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35 25 78 111 68 33 97 3 112 29 47 28 113 8 54 38 94 20 12 14 45 101 119 6 2 104 96 59 79 72 62 63 40 1 19 21 43 0 17 156 81 122 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_backlight.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 173</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 179</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 245</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 21 72 156 113 8 28 59 63 1 0 5 104 96 79 62 6 40 19 43 17 81 122 112 25 78 54 29 38 68 94 3 20 35 12 47 14 33 45 111 101 119 97 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_control.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 146</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 265</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 229</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12 111 54 25 94 45 38 20 14 97 3 112 78 29 68 35 47 33 28 113 104 96 59 79 72 62 63 6 8 40 1 19 21 43 0 17 156 81 101 119 2 122 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_display.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 205</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 194</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 262</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 94 45 54 12 81 122 25 38 20 14 5 112 78 29 68 3 35 47 33 28 111 104 113 96 59 79 72 62 63 6 8 40 1 19 21 43 0 17 156 2 101 119 97</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_interval.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 177</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 178</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 196</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8 113 28 72 21 156 59 63 1 0 5 104 96 79 62 6 40 19 43 17 81 122 112 25 78 54 29 38 68 94 3 20 35 12 47 14 33 45 111 101 119 97 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_tuyaInterface.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 161</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 171</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 261</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19 79 104 6 17 96 62 40 43 81 122 5 113 59 72 63 8 1 21 0 28 156 112 25 78 54 29 38 68 94 3 20 35 12 47 14 33 45 111 101 119 97 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_openWindow.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 147</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 240</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 241</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28 112 3 25 29 47 111 78 68 35 33 97 54 38 94 20 12 14 45 113 104 96 59 79 72 62 63 6 8 40 1 19 21 43 0 17 101 119 2 156 81 122 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_relay.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 250</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 197</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 201</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78 111 35 25 68 33 97 112 29 3 47 28 5 54 38 94 20 12 14 45 101 119 104 113 96 59 79 72 62 63 6 8 40 1 19 21 43 0 17 156 81 122 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_updateFromWIFI.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 187</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 166</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 239</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35 25 78 111 68 33 97 3 112 29 47 28 113 54 38 94 20 12 14 45 101 119 6 2 104 96 59 79 72 62 63 8 40 1 19 21 43 0 17 156 81 122 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_wifi.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 223</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 157</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 209</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 68 97 33 78 35 111 112 29 3 47 28 5 25 54 38 94 20 12 14 45 101 119 104 113 96 59 79 72 62 63 6 8 40 1 19 21 43 0 17 156 81 122 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_preheating.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 237</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 145</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 169</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35 25 78 111 68 33 97 3 112 29 47 28 113 54 38 94 20 12 14 45 101 119 6 2 104 96 59 79 72 62 63 8 40 1 19 21 43 0 17 156 81 122 5</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_key\depend\bsp_key.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 202</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 186</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 211</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 105 87 96 25 102 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96 102 87 25 115 105</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_backlight\mod_backlight.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 133</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 181</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 141</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 27 109</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 27 109</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_outputLogic.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 207</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 174</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 138</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 35 78 111 68 33 97 2 112 29 3 47 28 5 54 38 94 20 12 14 45 101 119 104 113 96 59 79 72 62 63 6 8 40 1 19 21 43 0 17 156 81 122</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_backlight\depend\bsp_backlight.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 153</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 264</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 206</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 109 110 96 25 123 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115 96 110 25 123 109</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_key\mod_key.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 139</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 203</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 255</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 31 105 38</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38 31 105</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_timming.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 267</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 132</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 246</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 2 33 68 97 78 35 111 25 112 29 3 47 28 5 54 38 94 20 12 14 45 101 119 104 113 96 59 79 72 62 63 6 8 40 1 19 21 43 0 17 156 81 122</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_storage.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 144</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 233</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 251</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 12 111 54 94 45 101 25 38 20 14 119 5 112 78 29 68 3 35 47 33 28 97 2 104 113 96 59 79 72 62 63 6 8 40 1 19 21 43 0 17 156 81 122</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_key.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 167</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 226</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 208</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 35 78 68 33 112 29 3 47 28 111 156 5 25 54 38 94 20 12 14 45 101 104 113 96 59 79 72 62 63 6 8 40 1 19 21 43 0 17 81 122 2 119 97</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_softRtc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 244</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 256</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 151</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81 122 62 43 96 40 104 79 6 19 17 113 5 59 72 63 8 1 21 0 28 156 112 25 78 54 29 38 68 94 3 20 35 12 47 14 33 45 111 101 119 97 2</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\application\app_main.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 243</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 234</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 260</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 2 104 112 111 156 81 119 97 101 122 113 25 96 78 59 54 79 29 72 38 62 68 63 94 6 3 8 5 20 40 35 1 12 28 19 47 21 14 43 33 0 45 17</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 14 38 119 25 20 54 94 12 45 111 101 5 112 78 29 68 3 35 47 33 28 97 2 104 113 96 59 79 72 62 63 6 8 40 1 19 21 43 0 17 156 81 122</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_storage\depend\bsp_crc8.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 252</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 152</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 268</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 112 111 156 81 119 97 101 122 113</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111 101 122 156 81 112 119 97 113</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_systemTick\Depend\BSP_Systick.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 148</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 199</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 189</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 90 125 96 25 124 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115 96 125 25 124 90</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_storage\depend\BSP_FlashMemory.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 158</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 213</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 140</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 127 121 96 25 128 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96 115 121 25 128 127</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_systemTick\mod_systemTick.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 165</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 263</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 249</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 98 56 59</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59 56 98</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_sysClock\depend\BSP_CLOCK.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 221</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 135</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 236</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 107 83 96 25 114 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115 96 83 25 114 107</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_storage\mod_storage.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 227</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 168</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 238</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 76 127 25 121 54 50 112 111 156 81 119 97 101 122 113</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 156 54 121 50 127 112 81 122 76 25 113 111 101 119 97</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_ntc3380\depend\bsp_ntc3380.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 172</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 195</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 224</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 91 155 96 25 131 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96 115 155 25 131 91</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_real_time\mod_real_time.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 266</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 183</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 232</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 63 113 112 111 156 81 119 97 101 122 51 103 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111 97 113 101 119 112 51 156 81 122 103 115 63</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_real_time\depend\bsp_real_time.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 216</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 225</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 235</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 113 112 111 156 81 119 97 101 122 103 115 96</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 81 119 103 156 97 111 112 101 122 115 113 96</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_uartFull\depend\bsp_uartFull.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 191</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 176</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 164</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 100 143 96 25 130 115 92</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96 92 143 25 130 115 100</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_lcd_ls3\mod_lcd_ls3.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 137</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 215</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 242</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 48 84 25 72</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 25 72 48 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_lcd_ls3\depend\bsp_lcd_ls3.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 150</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 220</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 212</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 84 129 96 25 89 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115 96 129 25 89 84</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_ntc3380\mod_ntc3380.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 253</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 162</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 204</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 70 91 25 62</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62 91 70 25</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_relay\mod_relay.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 160</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 210</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 163</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 67 134 68</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 134 68 67</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_relay\depend\bsp_relay.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 170</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 154</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 248</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 134 120 96 25 118 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 118 96 120 25 115 134</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_sysClock\mod_sysClock.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 188</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 185</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 247</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 52 126 78</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 52 78 126</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_uartFull\mod_uartFull.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 222</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 259</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 219</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 116 93</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 116 93</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\public\pbc_ringQueue\pbc_ringQueue.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 180</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 217</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 231</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 142 92</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 142 92</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_watchDog\depend\BSP_WDT.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 136</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 159</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 214</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 106 99 96 25 117 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115 96 99 25 117 106</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\..\module\mod_watchDog\mod_watchdog.c</name>
+      <outputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 218</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 258</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 228</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCSTM8</name>
+          <file> 85 106</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 85 106</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Release\Exe\ls3_tuya.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 184</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 88 173 146 205 177 167 243 147 207 237 250 244 144 267 161 187 223 153 221 252 158 202 150 172 216 170 148 191 136 133 139 137 253 266 160 227 188 165 222 218 180 254 182 198 108 175</file>
+        </tool>
+      </inputs>
+    </file>
+  </configuration>
+</project>
+
+
