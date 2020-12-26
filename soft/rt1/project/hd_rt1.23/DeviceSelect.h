@@ -111,8 +111,8 @@ defined(__RT3_36t__) || defined(__RT3_36i__) ||\
 
 
 ////////////////////////////////оƬƽ̨////////////////////////////////////////
-#define __STM8L052R8__
-//#define __HDSC32L136__
+//#define __STM8L052R8__
+#define __HDSC32L136__
 #define ST_MCU                 0X00000000
 #define HDSC_MCU               0X00000001
 
