@@ -48,7 +48,9 @@ void mod_backLight_task(INT16U _in_msTick)
         case BACK_LIGHT_RUN:
         {
             static INT16U lastTick = 0;
-            if(_in_msTick - lastTick >= 1000)
+                   INT16U passTick = 0;
+            passTick = _in_msTick - lastTick;       
+            if(passTick >= 1000)
             {
                 lastTick = _in_msTick;               
                 if(ledTimes != 0)

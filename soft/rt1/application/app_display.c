@@ -897,6 +897,7 @@ void app_display_scanTask(void)
     static bool initFlag = false;
     if(!initFlag)
     {
+        initFlag = true;
         mod_lcd_configure();
     }
     if(ptSysPara->dispUpdataEvent)
