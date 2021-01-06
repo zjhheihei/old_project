@@ -89,12 +89,12 @@ bool app_output_getTempKeepStatus(void)
 
 void app_outputLogic_scanTask(void)
 {
-    static uint16_t lastTick = 0;
-           uint16_t diffTick = 0;
-    diffTick = GetSysTickMillisecond() - lastTick;
-    if(500 <= diffTick)
-    {
-        lastTick = GetSysTickMillisecond();
+//    static uint16_t lastTick = 0;
+//           uint16_t diffTick = 0;
+//    diffTick = GetSysTickMillisecond() - lastTick;
+//    if(500 <= diffTick)
+//    {
+//        lastTick = GetSysTickMillisecond();
         SysPara_t *ptSysPara;
         ptSysPara = controler_getSysParaPt();
 //        if(SYS_STATUS_POWER_OFF == ptSysPara->record.sysRunStatus)
@@ -122,7 +122,7 @@ void app_outputLogic_scanTask(void)
         }
         logic.measTemp = ptSysPara->runMeasTemp;        
         logic.outputFlag = ptSysPara->floorRelayFlag;
-    }
+//    }
 }
 
 

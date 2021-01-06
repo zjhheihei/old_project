@@ -117,25 +117,25 @@
 ******************************************************************************/
 #if defined(__RT1_13__) 
 #define PRODUCT_KEY "ds0dlq53mqzftkng"                  
-#define MCU_VER "1.0.4" 
+#define MCU_VER "1.0.5" 
 
 
 #elif defined(__RT1_36t__) 
 #define PRODUCT_KEY "c32o8ns3dsltkwaw"                  
-#define MCU_VER "1.0.4"
+#define MCU_VER "1.0.5"
 
 
 #elif defined(__RT1_23i__) 
 #define PRODUCT_KEY "3hxk1dqwlxghdxqg" 
-#define MCU_VER "1.0.4"
+#define MCU_VER "1.0.5"
 #elif defined(__RT1_23__) 
 #define PRODUCT_KEY "3hxk1dqwlxghdxqg" 
-#define MCU_VER "1.0.1"
+#define MCU_VER "1.0.5"
 
 
 #elif defined(__RT1_36i__)  
 #define PRODUCT_KEY "ff3nrcxzaqf1wxxn"  
-#define MCU_VER "1.0.4"
+#define MCU_VER "1.0.5"
 #endif  
 
 

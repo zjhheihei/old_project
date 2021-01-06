@@ -128,7 +128,7 @@ void app_key_runMode(void)
     {
         ptSys->record.sysRunStatus = SYS_STATUS_POWER_OFF;       
         ptSys->timming.status = TIMMING_STATUS_IDLE;
-        ptSys->timming.disFlag = false;      
+        ptSys->timming.disFlag = false;    
     }
     else if((PUSH_DOWN | PUSH_CONTINUE) & mod_keyOperation(KEY_ADD,ms_3000,ms_200))
     {         
@@ -141,7 +141,7 @@ void app_key_runMode(void)
         runSetTempChangeFlag = true;        
     }
     else if((PUSH_UP | PUSH_CONTINUE) & (currentKey = mod_keyOperation(KEY_MENU,ms_3000,NOCONTINUE)))
-    {       
+    {               
         if(PUSH_UP == currentKey)
         {
             ptSys->record.sysRunStatus = SYS_STATUS_TIMING_SET;
@@ -156,10 +156,6 @@ void app_key_runMode(void)
             {
                 ptSys->tempControlMode = (tempControlMode_t)keyOperation(DDR_ADD,\
                   DATA_LOOP,1,TEMP_CONTROL_MODE_TIME,TEMP_CONTROL_MODE_MANUAL,(int16_t)ptSys->tempControlMode);
-//                if(PROGRAM_OFF == ptSys->record.weekPrg)
-//                {
-//                    ptSys->record.weekPrg = PROGRAM_5;
-//                }
             } 
             mod_key_maskOnceOperation(KEY_MENU);
         }       

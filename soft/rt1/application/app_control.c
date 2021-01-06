@@ -482,7 +482,7 @@ void app_control_updata_measTemp(void)
             else if(OUTSIDE_ERROR & error)
             {
                 s_sysPara.runMeasTemp = iTemp + s_sysPara.record.inAdjTemp;
-                s_sysPara.runLifTemp = 995;
+                s_sysPara.runLifTemp = 995;               
             }
             else if(NONE_ERROR == error)
             {

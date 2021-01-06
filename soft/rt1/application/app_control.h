@@ -20,6 +20,7 @@
 #define MIN_DIF_TEMP               5
 
 
+
 #define MAX_LTP_TEMP               100
 #define MIN_LTP_TEMP               45
 

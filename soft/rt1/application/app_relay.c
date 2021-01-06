@@ -39,19 +39,23 @@ void limitCheck(void)
             {
                 if(ptSys->runLifTemp >= ptSys->record.lifSetTemp)
                 {
-                    outsideLimitFlag = true;  
-                    ptSys->floorRelayFlag = false;
+                    outsideLimitFlag = true;                      
                 }
                 else if(ptSys->runLifTemp <= ptSys->record.lifSetTemp - LIF_DIFF)
                 {
                     outsideLimitFlag = false;
                 } 
             }
+            
+            if(outsideLimitFlag)
+            {
+                ptSys->floorRelayFlag = false;
+            }
         }
         else
         {
             outsideLimitFlag = false;           
-        }
+        }                            
     }
     else
     {
@@ -266,6 +270,7 @@ void app_relayOut_scanTask(void)
         else
         {
             ptSysPara->floorRelayFlag = false;
+            app_outputLogic_scanTask();
             if((SYS_STATUS_POWER_OFF == ptSysPara->record.sysRunStatus) &&\
               (MIN_LTP_TEMP < ptSysPara->record.ltpSetTemp) &&\
                 (NONE_ERROR == ptSysPara->systemError))
