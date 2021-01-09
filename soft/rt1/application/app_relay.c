@@ -241,7 +241,7 @@ void app_output_timeControlCheck(void)
 
 void app_relayOut_scanTask(void)
 {    
-    static uint16_t initDelayTime = 0;     
+    static uint16_t initDelayTime = 0;   
     mod_relay_scanTask(GetSysTickMillisecond());
     if(RELAY_TASK_STATUS_INIT == relayTaskStatus)
     {
@@ -260,7 +260,7 @@ void app_relayOut_scanTask(void)
     else
     {
         SysPara_t *ptSysPara;
-        ptSysPara = controler_getSysParaPt();              
+        ptSysPara = controler_getSysParaPt();                    
         if(app_relayOutput_enable()) 
         {      
             ptSysPara->floorRelayFlag = app_output_floorLogic();   
@@ -269,12 +269,10 @@ void app_relayOut_scanTask(void)
         }
         else
         {
-            ptSysPara->floorRelayFlag = false;
-            app_outputLogic_scanTask();
             if((SYS_STATUS_POWER_OFF == ptSysPara->record.sysRunStatus) &&\
               (MIN_LTP_TEMP < ptSysPara->record.ltpSetTemp) &&\
                 (NONE_ERROR == ptSysPara->systemError))
-            {
+            {                
                 ltpFlag = app_output_floorLogic();   
             }
             else

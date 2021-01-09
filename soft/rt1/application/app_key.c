@@ -103,11 +103,11 @@ void app_key_powOffMode(void)
     }
     else if(PUSH_DOWN & mod_keyOperation(KEY_ADD,NOCONTINUE,NOCONTINUE))
     {
-        powUpFlag = true;
+        powUpFlag = true;               
     }
     else if(PUSH_DOWN & mod_keyOperation(KEY_DEC,NOCONTINUE,NOCONTINUE))
     {
-        powUpFlag = true;
+        powUpFlag = true;              
     }
     if(powUpFlag)
     {
@@ -128,7 +128,7 @@ void app_key_runMode(void)
     {
         ptSys->record.sysRunStatus = SYS_STATUS_POWER_OFF;       
         ptSys->timming.status = TIMMING_STATUS_IDLE;
-        ptSys->timming.disFlag = false;    
+        ptSys->timming.disFlag = false;            
     }
     else if((PUSH_DOWN | PUSH_CONTINUE) & mod_keyOperation(KEY_ADD,ms_3000,ms_200))
     {         
@@ -158,7 +158,8 @@ void app_key_runMode(void)
                   DATA_LOOP,1,TEMP_CONTROL_MODE_TIME,TEMP_CONTROL_MODE_MANUAL,(int16_t)ptSys->tempControlMode);
             } 
             mod_key_maskOnceOperation(KEY_MENU);
-        }       
+        }  
+        ptSys->record.ltpSetTemp -= 5;
     }
     else if(PUSH_UP & mod_keyOperation(KEY_SUN,NOCONTINUE,NOCONTINUE))
     {
@@ -174,6 +175,7 @@ void app_key_runMode(void)
         ptSys->timming.status = TIMMING_STATUS_IDLE;
         ptSys->timming.disFlag = false; 
         ptSys->tempControlMode = TEMP_CONTROL_MODE_MANUAL; 
+
     }
     else if(PUSH_CONTINUE & mod_keyOperation(KEY_LINK,ms_3000,NOCONTINUE))
     {

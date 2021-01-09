@@ -23,11 +23,11 @@ void main(void)
         #endif      
         systickTimeRun_task();       
         app_backlight_scanTask();
-        app_control_scanTask();
-        app_outputLogic_scanTask();
+        app_control_scanTask();       
         app_sto_eeprom_scanTask();           
         app_display_scanTask();
         app_key_scanTask();
+        app_outputLogic_scanTask();
         app_relayOut_scanTask();                
         app_timming_scanTask();       
         #ifdef __WIFI_CONTROL__  

@@ -54,6 +54,10 @@ bool app_output_floorLogic(void)
     {
         retOutputFlag = false;
     }
+    else
+    {
+        ;
+    }
     
 //    /***************************加入恒温标志判定****************************/
 //    #ifdef __FUNCTION_KEEP_TEMP__
@@ -97,6 +101,7 @@ void app_outputLogic_scanTask(void)
 //        lastTick = GetSysTickMillisecond();
         SysPara_t *ptSysPara;
         ptSysPara = controler_getSysParaPt();
+        static systemRunStatus_t last_status = SYS_STATUS_POWER_OFF;
 //        if(SYS_STATUS_POWER_OFF == ptSysPara->record.sysRunStatus)
 //        {
 //            logic.setTemp = ptSysPara->record.ltpTemp;
@@ -104,6 +109,15 @@ void app_outputLogic_scanTask(void)
 //            logic.closeDiffTemp = 30;
 //        }
 //        else
+        if(last_status != ptSysPara->record.sysRunStatus)
+        {
+            if(SYS_STATUS_POWER_OFF == ptSysPara->record.sysRunStatus)
+            {
+                ptSysPara->floorRelayFlag = false;
+            }
+            last_status = ptSysPara->record.sysRunStatus;
+        }
+        
         if(SYS_STATUS_POWER_OFF != ptSysPara->record.sysRunStatus)
         {
             logic.openDiffTemp = ptSysPara->record.diffTemp;
@@ -117,8 +131,7 @@ void app_outputLogic_scanTask(void)
                 logic.openDiffTemp = 0;
                 logic.closeDiffTemp = 30;
                 logic.setTemp = ptSysPara->record.ltpSetTemp;
-            }
-            
+            }            
         }
         logic.measTemp = ptSysPara->runMeasTemp;        
         logic.outputFlag = ptSysPara->floorRelayFlag;
