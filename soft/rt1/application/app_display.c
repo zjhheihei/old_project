@@ -634,15 +634,15 @@ void app_dis_highSetMode(void)
         }
         case HIGH_SETTING_LTP:
         {
-            mod_lcd_char(DIS_LTP_CN,BN_TRUE);
-            if(MIN_LTP_TEMP == ptSys->record.ltpSetTemp)
+            mod_lcd_char(DIS_LTP_CN,BN_TRUE);            
+            if(MIN_LTP_TEMP >= ptSys->record.ltpSetTemp)
             {
                 digBuf[0] = CHAR_O;
                 digBuf[1] = CHAR_F;
                 digBuf[2] = CHAR_F;
             }
             else
-            {
+            {                   
                 disTempFlag = true;
                 ptTemp = &ptSys->record.ltpSetTemp;
             }

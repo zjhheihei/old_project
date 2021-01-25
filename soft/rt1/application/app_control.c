@@ -556,7 +556,8 @@ void runSetTemp_handle(void)
     }    
     app_con_tempLegalProtect(s_sysPara.record.maxSetTemp,s_sysPara.record.minSetTemp,&s_sysPara.runSetTemp);
     app_con_tempLegalProtect(s_sysPara.record.maxSetTemp,s_sysPara.record.minSetTemp,&s_sysPara.record.sunSetTemp);
-    app_con_tempLegalProtect(s_sysPara.record.maxSetTemp,s_sysPara.record.minSetTemp,&s_sysPara.record.moonSetTemp);      
+    app_con_tempLegalProtect(s_sysPara.record.maxSetTemp,s_sysPara.record.minSetTemp,&s_sysPara.record.moonSetTemp);
+    app_con_tempLegalProtect(MAX_LTP_TEMP,MIN_LTP_TEMP,&s_sysPara.record.ltpSetTemp);  
 }
 //------------------------------E N D-------------------------------------------
 
