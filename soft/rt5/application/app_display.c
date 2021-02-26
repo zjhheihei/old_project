@@ -365,7 +365,12 @@ static void runMode_rtc(void)
     realTime = app_real_time_getTime();
     bool disTempFlag = true;
     dis_week(realTime->week,true);
-    dis_interval(app_inter_runInter());
+    
+    if(TEMP_CONTROL_MODE_MANUAL != para->record.tempControlMode)
+    {
+        dis_interval(app_inter_runInter());
+    }  
+    
     if(para->blink_RTC_TEMP_flag)
     {
         dis_hour(realTime->hour,true);
@@ -388,6 +393,13 @@ static void runMode_rtc(void)
     else
     {
         mod_lcd_char(DIS_MAN,BN_TRUE);
+        if(para->fast_set_blink_flag)
+        {
+            if(para->blinkEvent)
+            {
+                mod_lcd_char(DIS_MAN,BN_FALSE);
+            }           
+        }
     }    
     
     if(disTempFlag)
@@ -432,7 +444,7 @@ static void highSetMode(void)
     bool measFlag = false;
     int16_t *ptTemp;
     
-    uint8_t menu_buf[18][4] = {CHAR_1,CHAR_A,CHAR_D,CHAR_J,\
+    uint8_t menu_buf[19][4] = {CHAR_1,CHAR_A,CHAR_D,CHAR_J,\
       CHAR_2,CHAR_S,CHAR_E,CHAR_N,CHAR_3,CHAR_H,CHAR_I,CHAR_T,
       CHAR_4,CHAR_L,CHAR_I,CHAR_T,CHAR_5,CHAR_D,CHAR_I,CHAR_F,
       CHAR_6,CHAR_P,CHAR_o,CHAR_F,CHAR_7,CHAR_L,CHAR_I,CHAR_F,                       
@@ -441,7 +453,7 @@ static void highSetMode(void)
       CHAR_C,CHAR_o,CHAR_I,CHAR_D,CHAR_D,CHAR_o,CHAR_D,CHAR_T,
       CHAR_E,CHAR_o,CHAR_T,CHAR_F,CHAR_F,CHAR_o,CHAR_R,CHAR_T,
       CHAR_G,CHAR_A,CHAR_S,CHAR_H,CHAR_H,CHAR_S,CHAR_E,CHAR_T, 
-      CHAR_I,CHAR_F,CHAR_A,CHAR_C,
+      CHAR_I,CHAR_F,CHAR_A,CHAR_S,CHAR_I,CHAR_F,CHAR_A,CHAR_C,
     };
     char_4bit(&menu_buf[menu][0]);    
     switch(para->highSet.menu)
@@ -606,6 +618,12 @@ static void highSetMode(void)
         {
             uint8_t buf[2][3] = {CHAR_3,CHAR_3,CHAR_8,CHAR_3,CHAR_9,CHAR_5};
             char_3bit(&buf[(uint8_t)para->record.sensorType][0]);      
+            break;
+        }
+        case HIGH_SETTING_SAVE_SET_TEMP:
+        {
+            disTempFlag = true;
+            ptTemp = &para->record.saveSetTemp;
             break;
         }
         case HIGH_SETTING_FAC:

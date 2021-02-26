@@ -144,6 +144,7 @@ typedef enum
     HIGH_SETTING_WINDOW_CHECK_BACK_TIME,
     HIGH_SETTING_WINDOW_PREHEAT_SWITCH,
     HIGH_SETTING_NTC_TYPE_SECELT,  
+    HIGH_SETTING_SAVE_SET_TEMP,
     HIGH_SETTING_FAC,    
     HIGH_SETTING_MAX_INDEX,       
 }highSetMenu_t;
@@ -330,6 +331,7 @@ typedef struct
     int16_t                diffTemp              ;      
     int16_t                lifSetTemp            ; 
     int16_t                ltpSetTemp            ;
+    int16_t                saveSetTemp           ;
     sensorMode_t           sensorMode            ; 
     sensorType_t           sensorType            ;
     relayOutType_t         relayOutType          ;
@@ -351,7 +353,8 @@ typedef struct
     bool                 blinkEvent:1;           //500ms秒闪动
     bool                 blink_1000ms_flag:1;    
     bool                 blink_RTC_TEMP_flag:1;    
-    bool                 systemUpdataEvent:1;                      
+    bool                 systemUpdataEvent:1; 
+    bool                 fast_set_blink_flag:1;
     highSet_t            highSet;
     rtcSet_t             rtcSet;
     prgSet_t             prgSet;
@@ -410,6 +413,7 @@ typedef enum
     DELAY_HIGH_SET_BLINK_STOP,
     DELAY_TIME_RTC_SET,
     DELAY_TIME_PRG_SET,
+    DELAY_FAST_SET_BLINK_TIME,
     DELAY_TIMER_MAX
 }delayTime_t;
 //function

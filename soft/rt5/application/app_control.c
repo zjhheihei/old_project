@@ -88,6 +88,7 @@ preheatPara_t preheatPara;
 
 #define FAC_LIF_TEMP               420
 #define FAC_LTP_TEMP               MIN_LTP_TEMP
+#define FAC_SAVE_TEMP               220
 #define FAC_3380_10K               B3380_10K
 #define FAC_WEEK_PRG               PROGRAM_7
 #define FAC_RELAY_OUT_TYPE         MIN_RELAY_OUT_TYPE
@@ -141,6 +142,7 @@ SysPara_t s_sysPara =
     .record.diffTemp            = FAC_DIF_TEMP,
     .record.lifSetTemp          = FAC_LIF_TEMP,
     .record.ltpSetTemp          = FAC_LTP_TEMP,
+    .record.saveSetTemp         = FAC_SAVE_TEMP,
     .record.sensorMode          = FAC_SERSON_CFG,
     .record.sensorType          = FAC_3380_10K,    
     .record.relayOutType        = FAC_RELAY_OUT_TYPE,
@@ -190,6 +192,7 @@ void app_con_gotoFac(void)
     s_sysPara.record.diffTemp            = FAC_DIF_TEMP         ;
     s_sysPara.record.lifSetTemp          = FAC_LIF_TEMP         ;
     s_sysPara.record.ltpSetTemp          = FAC_LTP_TEMP         ;
+    s_sysPara.record.saveSetTemp                   = FAC_SAVE_TEMP;
     s_sysPara.record.sensorMode          = FAC_SERSON_CFG       ;
     s_sysPara.record.sensorType          = FAC_3380_10K         ;   
     s_sysPara.record.relayOutType        = FAC_RELAY_OUT_TYPE   ;
@@ -837,6 +840,10 @@ void app_control_timeOutHandle(void)
                         s_sysPara.blink_RTC_TEMP_flag = true;
                     }                   
                 }
+            }    
+            if(app_control_timeOut_get(DELAY_FAST_SET_BLINK_TIME))
+            {
+                s_sysPara.fast_set_blink_flag = false;                  
             }    
             break;
         }
