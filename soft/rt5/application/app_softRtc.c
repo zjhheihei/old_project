@@ -83,7 +83,13 @@ void app_rtc_task(void)
           if(ms_20000 < passTime)
           {
               getLocalRtcCyc = GetSysTickMillisecond();
-              read_loacl_rtc();
+              SysPara_t *para;  
+              para = controler_getSysParaPt();
+              if(SYS_STATUS_RTC_SET != para->record.sysRunStatus)
+              {
+                  read_loacl_rtc();
+              }
+              
               if(WIFI_CONN_CLOUD == app_pullTuyaWifiStateFormThisModule())
               {
                   if(++getNetRtcCyc >= getNetRtcCyc_fix)
