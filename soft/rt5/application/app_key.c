@@ -111,57 +111,104 @@ static void runMode(void)
     bool runSetTempChangeFlag = false;
     bool ddr;   
     keyActionType_t currentKey = PUSH_NONE;
+//    if(app_openWinow_run())
+//    {
+//        app_openWindow_clr();
+//        mod_key_maskOnceOperation(KEY_POW);
+//        mod_key_maskOnceOperation(KEY_ADD);
+//        mod_key_maskOnceOperation(KEY_DEC);
+//        mod_key_maskOnceOperation(KEY_MENU);
+//        mod_key_maskOnceOperation(KEY_SUN);
+//    }
+    
     if(PUSH_DOWN & mod_keyOperation(KEY_POW,NOCONTINUE,NOCONTINUE))
     {
         if(app_openWinow_run())
         {
             app_openWindow_clr();
+            mod_key_maskOnceOperation(KEY_POW);
         }
-        para->record.sysRunStatus = SYS_STATUS_POWER_OFF; 
-        para->fast_set_blink_flag = false;
+        else
+        {
+            para->record.sysRunStatus = SYS_STATUS_POWER_OFF; 
+            para->fast_set_blink_flag = false;
+        }       
     }
     else if((PUSH_DOWN | PUSH_CONTINUE) & mod_keyOperation(KEY_ADD,ms_3000,ms_200))
-    {         
-        ddr = DDR_ADD;
-        runSetTempChangeFlag = true;
-        para->fast_set_blink_flag = false;
-        //para->dis_save_flag = false;
+    {    
+        if(app_openWinow_run())
+        {
+            app_openWindow_clr();
+            mod_key_maskOnceOperation(KEY_POW);
+        }
+        else
+        {
+            ddr = DDR_ADD;
+            runSetTempChangeFlag = true;
+            para->fast_set_blink_flag = false;
+            //para->dis_save_flag = false;
+        }
     }
     else if((PUSH_DOWN | PUSH_CONTINUE) & mod_keyOperation(KEY_DEC,ms_3000,ms_200))
-    {                   
-        ddr = DDR_DEC;
-        runSetTempChangeFlag = true; 
-        para->fast_set_blink_flag = false;
+    {   
+        if(app_openWinow_run())
+        {
+            app_openWindow_clr();
+            mod_key_maskOnceOperation(KEY_POW);
+        }
+        else
+        {
+            ddr = DDR_DEC;
+            runSetTempChangeFlag = true; 
+            para->fast_set_blink_flag = false;
+        }
+        
         //para->dis_save_flag = false;
     }
     else if((PUSH_UP | PUSH_CONTINUE) & (currentKey = mod_keyOperation(KEY_MENU,ms_5000,NOCONTINUE)))
     {    
-       
-        if(PUSH_UP == currentKey)
-        {        
-             para->fast_set_blink_flag = false;
-            if(TEMP_CONTROL_MODE_TIME == para->record.tempControlMode)
-            {
-              para->record.tempControlMode = TEMP_CONTROL_MODE_MANUAL;
-            }
-            else
-            {
-              para->record.tempControlMode = TEMP_CONTROL_MODE_TIME; 
-            }
-            para->blink_RTC_TEMP_flag = false;
-            app_control_timeOut_set(DELAY_TIMMING_BLINK_RTC_TEMP,ms_5000);               
-        }
-        else if(PUSH_CONTINUE == currentKey)
+        if(app_openWinow_run())
         {
-             para->fast_set_blink_flag = false;
-            para->record.sysRunStatus = SYS_STATUS_RTC_SET;
-            app_control_timeOut_set(DELAY_CONTROLER_COMMON,ms_30000);  
-            para->rtcSet.enbaleBlinkFlag = true;
-            para->rtcSet.menu = 0;
-        }        
+            app_openWindow_clr();
+            mod_key_maskOnceOperation(KEY_POW);
+        }
+        else
+        {
+            if(PUSH_UP == currentKey)
+            {        
+                 para->fast_set_blink_flag = false;
+                if(TEMP_CONTROL_MODE_TIME == para->record.tempControlMode)
+                {
+                  para->record.tempControlMode = TEMP_CONTROL_MODE_MANUAL;
+                }
+                else
+                {
+                  para->record.tempControlMode = TEMP_CONTROL_MODE_TIME; 
+                }
+                para->blink_RTC_TEMP_flag = false;
+                app_control_timeOut_set(DELAY_TIMMING_BLINK_RTC_TEMP,ms_5000);               
+            }
+            else if(PUSH_CONTINUE == currentKey)
+            {
+                 para->fast_set_blink_flag = false;
+                para->record.sysRunStatus = SYS_STATUS_RTC_SET;
+                app_control_timeOut_set(DELAY_CONTROLER_COMMON,ms_30000);  
+                para->rtcSet.enbaleBlinkFlag = true;
+                para->rtcSet.menu = 0;
+            }  
+        }
     }
     else if((PUSH_UP | PUSH_CONTINUE) & (currentKey = mod_keyOperation(KEY_SUN,ms_5000,NOCONTINUE)))    
     {
+        if(app_openWinow_run())
+        {
+            app_openWindow_clr();
+            mod_key_maskOnceOperation(KEY_POW);
+        }
+        else
+        {
+            
+        
         if(PUSH_UP == currentKey)
         {
             para->record.tempControlMode = TEMP_CONTROL_MODE_MANUAL;
@@ -180,38 +227,65 @@ static void runMode(void)
             para->prgSet.enbaleBlinkFlag = true;
             para->prgSet.menu = 0;
             app_control_timeOut_set(DELAY_CONTROLER_COMMON,ms_30000); 
+        }
         }        
     }
     else if(PUSH_CONTINUE & mod_keyOperation(KEY_LINK,ms_3000,NOCONTINUE))
     {
-        #ifdef __WIFI_CONTROL__
-        para->record.sysRunStatus = SYS_STATUS_SMARTLINK;
-        para->wifi.linkType = SMART_CONFIG;
-        para->wifi.linkDis = 0;
-        para->wifi.linkStatus = WIFI_LINK_DELAY;  
-        app_entryWifiCfg_state((tuya_configType_def)para->wifi.linkType);        
-        app_control_timeOut_set(DELAY_CONTROLER_COMMON,ms_60000);   
-         para->fast_set_blink_flag = false;
-        #endif
+        if(app_openWinow_run())
+        {
+            app_openWindow_clr();
+            mod_key_maskOnceOperation(KEY_POW);
+        }
+        else
+        {
+            #ifdef __WIFI_CONTROL__
+            para->record.sysRunStatus = SYS_STATUS_SMARTLINK;
+            para->wifi.linkType = SMART_CONFIG;
+            para->wifi.linkDis = 0;
+            para->wifi.linkStatus = WIFI_LINK_DELAY;  
+            app_entryWifiCfg_state((tuya_configType_def)para->wifi.linkType);        
+            app_control_timeOut_set(DELAY_CONTROLER_COMMON,ms_60000);   
+            para->fast_set_blink_flag = false;
+            #endif
+        }
     }
     else if(PUSH_CONTINUE & mod_keyOperation(KEY_PARA,ms_5000,NOCONTINUE))
     {
-        para->record.sysRunStatus = SYS_STATUS_HIGH_SETTING;
-        para->highSet.menu = HIGH_SETTING_NTC_ADJ;
-        para->highSet.disAdjTempFlag = false;
-        para->highSet.facStatus = FAC_IDLE;
-        app_control_timeOut_set(DELAY_CONTROLER_COMMON,ms_30000);   
-        app_control_timeOut_set(DELAY_AUTO_GOTO_FAC,ms_60000); 
-        para->autoGotoFacTime = 0;
-        para->highSet.blinkFlag = true;
-         para->fast_set_blink_flag = false;
+        if(app_openWinow_run())
+        {
+            app_openWindow_clr();
+            mod_key_maskOnceOperation(KEY_POW);
+        }
+        else
+        {
+            para->record.sysRunStatus = SYS_STATUS_HIGH_SETTING;
+            para->highSet.menu = HIGH_SETTING_NTC_ADJ;
+            para->highSet.disAdjTempFlag = false;
+            para->highSet.facStatus = FAC_IDLE;
+            app_control_timeOut_set(DELAY_CONTROLER_COMMON,ms_30000);   
+            app_control_timeOut_set(DELAY_AUTO_GOTO_FAC,ms_60000); 
+            para->autoGotoFacTime = 0;
+            para->highSet.blinkFlag = true;
+            para->fast_set_blink_flag = false;
+        }
+        
     }   
     else if(PUSH_CONTINUE & mod_keyOperation(KEY_AI,ms_5000,NOCONTINUE))
     {
-        para->record.sysRunStatus = SYS_STATUS_AI_ADJ_SET;
-        para->aiAdjSetMenu        = AI_ADJ_MENU_T;
-        app_control_timeOut_set(DELAY_CONTROLER_COMMON,ms_60000);  
-         para->fast_set_blink_flag = false;
+        if(app_openWinow_run())
+        {
+            app_openWindow_clr();
+            mod_key_maskOnceOperation(KEY_POW);
+        }
+        else
+        {
+            para->record.sysRunStatus = SYS_STATUS_AI_ADJ_SET;
+            para->aiAdjSetMenu        = AI_ADJ_MENU_T;
+            app_control_timeOut_set(DELAY_CONTROLER_COMMON,ms_60000);  
+            para->fast_set_blink_flag = false;
+        }
+        
     }
     if(runSetTempChangeFlag)
     {     
@@ -626,7 +700,7 @@ static void rtcSetMode(void)
     }
     else
     {
-        app_control_timeOut_set(DELAY_CONTROLER_COMMON,ms_60000);   
+        app_control_timeOut_set(DELAY_CONTROLER_COMMON,ms_30000);   
         if((PUSH_DOWN | PUSH_CONTINUE) & mod_keyOperation(KEY_ADD,ms_3000,ms_200))
         {
             setFlag = true;            
