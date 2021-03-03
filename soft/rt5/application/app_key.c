@@ -604,7 +604,7 @@ static void prgSetMode(void)
     }
     else
     {   
-        app_control_timeOut_set(DELAY_CONTROLER_COMMON,ms_60000);   
+        app_control_timeOut_set(DELAY_CONTROLER_COMMON,ms_30000);   
         if((PUSH_DOWN | PUSH_CONTINUE) & mod_keyOperation(KEY_ADD,ms_3000,ms_200))
         {
             setFlag = true;            
