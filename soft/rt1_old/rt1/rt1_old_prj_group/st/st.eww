@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\..\..\project\rt1.36tn\rt1.36tn.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\project\rt1.13\rt1_13.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\project\rt1.23__\rt1_23.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\project\rt1.23\rt1_23wifi.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\project\rt1.36wifi\rt1_36wifi.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>release</name>
+      <member>
+        <project>rt1.36tn</project>
+        <configuration>Release</configuration>
+      </member>
+      <member>
+        <project>rt1_13</project>
+        <configuration>Release</configuration>
+      </member>
+      <member>
+        <project>rt1_23</project>
+        <configuration>Release</configuration>
+      </member>
+      <member>
+        <project>rt1_23wifi</project>
+        <configuration>Release</configuration>
+      </member>
+      <member>
+        <project>rt1_36wifi</project>
+        <configuration>Release</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

@@ -453,7 +453,7 @@ static void highSetMode(void)
       CHAR_C,CHAR_o,CHAR_I,CHAR_D,CHAR_D,CHAR_o,CHAR_D,CHAR_T,
       CHAR_E,CHAR_o,CHAR_T,CHAR_F,CHAR_F,CHAR_o,CHAR_R,CHAR_T,
       CHAR_G,CHAR_A,CHAR_S,CHAR_H,CHAR_H,CHAR_S,CHAR_E,CHAR_T, 
-      CHAR_I,CHAR_F,CHAR_A,CHAR_S,CHAR_I,CHAR_F,CHAR_A,CHAR_C,
+      CHAR_I,CHAR_F,CHAR_A,CHAR_S,CHAR_J,CHAR_F,CHAR_A,CHAR_C,
     };
     char_4bit(&menu_buf[menu][0]);    
     switch(para->highSet.menu)
