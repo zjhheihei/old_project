@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\..\..\project\rt3.23i\rt3.23i.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\project\rt3.36i\rt3.36i.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\project\rt3.36t\rt3.36t.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\..\..\project\rt3.13\rt3_13.ewp</path>
+  </project>
+  <batchBuild>
+    <batchDefinition>
+      <name>release</name>
+      <member>
+        <project>rt3.23i</project>
+        <configuration>Release</configuration>
+      </member>
+      <member>
+        <project>rt3.36i</project>
+        <configuration>Release</configuration>
+      </member>
+      <member>
+        <project>rt3.36t</project>
+        <configuration>Release</configuration>
+      </member>
+      <member>
+        <project>rt3_13</project>
+        <configuration>Release</configuration>
+      </member>
+    </batchDefinition>
+  </batchBuild>
+</workspace>
+
+

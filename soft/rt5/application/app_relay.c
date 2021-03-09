@@ -40,7 +40,7 @@ void limitCheck(void)
                 if(ptSys->runLifTemp >= ptSys->record.lifSetTemp)
                 {
                     outsideLimitFlag = true;  
-                    ptSys->floorRelayFlag = false;
+                    
                 }
                 else if(ptSys->runLifTemp <= ptSys->record.lifSetTemp - LIF_DIFF)
                 {
@@ -56,7 +56,12 @@ void limitCheck(void)
     else
     {
         outsideLimitFlag = false;
-    }        
+    }    
+
+    if(outsideLimitFlag)    
+    {
+        ptSys->floorRelayFlag = false;
+    }
 }
 
 bool app_relayOutput_enable(void)
